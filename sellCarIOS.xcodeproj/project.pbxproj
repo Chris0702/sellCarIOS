@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49211E4A56A2A6ECB379AFF8 /* Pods_sellCarIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9FFD7F368BBD49B648A332 /* Pods_sellCarIOS.framework */; };
 		83CE89B62154977E0007C76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B52154977E0007C76F /* AppDelegate.swift */; };
 		83CE89B82154977E0007C76F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B72154977E0007C76F /* ViewController.swift */; };
 		83CE89BB2154977E0007C76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE89B92154977E0007C76F /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		83CE89C02154977F0007C76F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE89BE2154977F0007C76F /* LaunchScreen.storyboard */; };
 		83CE89CB2154977F0007C76F /* sellCarIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89CA2154977F0007C76F /* sellCarIOSTests.swift */; };
 		83CE89D62154977F0007C76F /* sellCarIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89D52154977F0007C76F /* sellCarIOSUITests.swift */; };
+		ABC825ACE7CB027AA1B55D17 /* Pods_sellCarIOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54104538B3304842FC0D2D4 /* Pods_sellCarIOSUITests.framework */; };
+		C669DBD539D02F176C311DEF /* Pods_sellCarIOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB00DE573CB9E98AE34B654 /* Pods_sellCarIOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0801746D84A538A10B342691 /* Pods-sellCarIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sellCarIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sellCarIOS/Pods-sellCarIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		1DB00DE573CB9E98AE34B654 /* Pods_sellCarIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sellCarIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6122625AD6A690BDB9648638 /* Pods-sellCarIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sellCarIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-sellCarIOS/Pods-sellCarIOS.release.xcconfig"; sourceTree = "<group>"; };
 		83CE89B22154977E0007C76F /* sellCarIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sellCarIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CE89B52154977E0007C76F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83CE89B72154977E0007C76F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,12 @@
 		83CE89D12154977F0007C76F /* sellCarIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sellCarIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CE89D52154977F0007C76F /* sellCarIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sellCarIOSUITests.swift; sourceTree = "<group>"; };
 		83CE89D72154977F0007C76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D9FFD7F368BBD49B648A332 /* Pods_sellCarIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sellCarIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0517D47A9864B91C561393 /* Pods-sellCarIOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sellCarIOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sellCarIOSTests/Pods-sellCarIOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A54104538B3304842FC0D2D4 /* Pods_sellCarIOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sellCarIOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7169D506BCB14862F36E140 /* Pods-sellCarIOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sellCarIOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sellCarIOSUITests/Pods-sellCarIOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B0C559E6E7DD8B75B6DCA024 /* Pods-sellCarIOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sellCarIOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-sellCarIOSTests/Pods-sellCarIOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E1D8D2E9047E2CBCFB56800C /* Pods-sellCarIOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sellCarIOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-sellCarIOSUITests/Pods-sellCarIOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49211E4A56A2A6ECB379AFF8 /* Pods_sellCarIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C669DBD539D02F176C311DEF /* Pods_sellCarIOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC825ACE7CB027AA1B55D17 /* Pods_sellCarIOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23CEE276CA0681FAE7FFEFA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0801746D84A538A10B342691 /* Pods-sellCarIOS.debug.xcconfig */,
+				6122625AD6A690BDB9648638 /* Pods-sellCarIOS.release.xcconfig */,
+				9E0517D47A9864B91C561393 /* Pods-sellCarIOSTests.debug.xcconfig */,
+				B0C559E6E7DD8B75B6DCA024 /* Pods-sellCarIOSTests.release.xcconfig */,
+				A7169D506BCB14862F36E140 /* Pods-sellCarIOSUITests.debug.xcconfig */,
+				E1D8D2E9047E2CBCFB56800C /* Pods-sellCarIOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C92A5ABDDC1274245ED9A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D9FFD7F368BBD49B648A332 /* Pods_sellCarIOS.framework */,
+				1DB00DE573CB9E98AE34B654 /* Pods_sellCarIOSTests.framework */,
+				A54104538B3304842FC0D2D4 /* Pods_sellCarIOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83CE89A92154977E0007C76F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +119,8 @@
 				83CE89C92154977F0007C76F /* sellCarIOSTests */,
 				83CE89D42154977F0007C76F /* sellCarIOSUITests */,
 				83CE89B32154977E0007C76F /* Products */,
+				23CEE276CA0681FAE7FFEFA5 /* Pods */,
+				6C92A5ABDDC1274245ED9A06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83CE89DA2154977F0007C76F /* Build configuration list for PBXNativeTarget "sellCarIOS" */;
 			buildPhases = (
+				772D89E855B86AA57A03D2B0 /* [CP] Check Pods Manifest.lock */,
 				83CE89AE2154977E0007C76F /* Sources */,
 				83CE89AF2154977E0007C76F /* Frameworks */,
 				83CE89B02154977E0007C76F /* Resources */,
+				B6B98CF610D0DB9AAFA3B684 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83CE89DD2154977F0007C76F /* Build configuration list for PBXNativeTarget "sellCarIOSTests" */;
 			buildPhases = (
+				4B6B458EAB0DBC6E201EFF0D /* [CP] Check Pods Manifest.lock */,
 				83CE89C22154977F0007C76F /* Sources */,
 				83CE89C32154977F0007C76F /* Frameworks */,
 				83CE89C42154977F0007C76F /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83CE89E02154977F0007C76F /* Build configuration list for PBXNativeTarget "sellCarIOSUITests" */;
 			buildPhases = (
+				D68FBEC517EA36EE9E8CC29C /* [CP] Check Pods Manifest.lock */,
 				83CE89CD2154977F0007C76F /* Sources */,
 				83CE89CE2154977F0007C76F /* Frameworks */,
 				83CE89CF2154977F0007C76F /* Resources */,
@@ -250,6 +294,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B6B458EAB0DBC6E201EFF0D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sellCarIOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		772D89E855B86AA57A03D2B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sellCarIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6B98CF610D0DB9AAFA3B684 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-sellCarIOS/Pods-sellCarIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-sellCarIOS/Pods-sellCarIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68FBEC517EA36EE9E8CC29C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sellCarIOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83CE89AE2154977E0007C76F /* Sources */ = {
@@ -428,10 +563,12 @@
 		};
 		83CE89DB2154977F0007C76F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0801746D84A538A10B342691 /* Pods-sellCarIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sellCarIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,10 +582,12 @@
 		};
 		83CE89DC2154977F0007C76F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6122625AD6A690BDB9648638 /* Pods-sellCarIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = sellCarIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +601,7 @@
 		};
 		83CE89DE2154977F0007C76F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0517D47A9864B91C561393 /* Pods-sellCarIOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +622,7 @@
 		};
 		83CE89DF2154977F0007C76F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0C559E6E7DD8B75B6DCA024 /* Pods-sellCarIOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +643,7 @@
 		};
 		83CE89E12154977F0007C76F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7169D506BCB14862F36E140 /* Pods-sellCarIOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +663,7 @@
 		};
 		83CE89E22154977F0007C76F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D8D2E9047E2CBCFB56800C /* Pods-sellCarIOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
