@@ -10,6 +10,11 @@
 		49211E4A56A2A6ECB379AFF8 /* Pods_sellCarIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9FFD7F368BBD49B648A332 /* Pods_sellCarIOS.framework */; };
 		83A340A52154CB0B004105F6 /* GUI in Resources */ = {isa = PBXBuildFile; fileRef = 83A340A42154CB0B004105F6 /* GUI */; };
 		83A340A82154CC00004105F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340A72154CC00004105F6 /* Constants.swift */; };
+		83A340BA2154E169004105F6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340B92154E169004105F6 /* Model.swift */; };
+		83A340BC2154E233004105F6 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340BB2154E233004105F6 /* Controller.swift */; };
+		83A340BE2154E299004105F6 /* StringProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340BD2154E299004105F6 /* StringProcess.swift */; };
+		83A340C02154E380004105F6 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340BF2154E380004105F6 /* HttpClient.swift */; };
+		83A340C22154E9FC004105F6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340C12154E9FC004105F6 /* HomeController.swift */; };
 		83CE89B62154977E0007C76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B52154977E0007C76F /* AppDelegate.swift */; };
 		83CE89B82154977E0007C76F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B72154977E0007C76F /* ViewController.swift */; };
 		83CE89BB2154977E0007C76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE89B92154977E0007C76F /* Main.storyboard */; };
@@ -44,6 +49,11 @@
 		6122625AD6A690BDB9648638 /* Pods-sellCarIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sellCarIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-sellCarIOS/Pods-sellCarIOS.release.xcconfig"; sourceTree = "<group>"; };
 		83A340A42154CB0B004105F6 /* GUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GUI; sourceTree = "<group>"; };
 		83A340A72154CC00004105F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		83A340B92154E169004105F6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		83A340BB2154E233004105F6 /* Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		83A340BD2154E299004105F6 /* StringProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProcess.swift; sourceTree = "<group>"; };
+		83A340BF2154E380004105F6 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		83A340C12154E9FC004105F6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		83CE89B22154977E0007C76F /* sellCarIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sellCarIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CE89B52154977E0007C76F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83CE89B72154977E0007C76F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +134,25 @@
 			path = define;
 			sourceTree = "<group>";
 		};
+		83A340B72154E0F6004105F6 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				83A340BB2154E233004105F6 /* Controller.swift */,
+				83A340C12154E9FC004105F6 /* HomeController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		83A340B82154E12C004105F6 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				83A340B92154E169004105F6 /* Model.swift */,
+				83A340BD2154E299004105F6 /* StringProcess.swift */,
+				83A340BF2154E380004105F6 /* HttpClient.swift */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
 		83CE89A92154977E0007C76F = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +178,8 @@
 		83CE89B42154977E0007C76F /* sellCarIOS */ = {
 			isa = PBXGroup;
 			children = (
+				83A340B82154E12C004105F6 /* tool */,
+				83A340B72154E0F6004105F6 /* controller */,
 				83A340A62154CBB8004105F6 /* define */,
 				83A340A42154CB0B004105F6 /* GUI */,
 				83CE89B52154977E0007C76F /* AppDelegate.swift */,
@@ -390,9 +421,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A340BC2154E233004105F6 /* Controller.swift in Sources */,
 				83CE89B82154977E0007C76F /* ViewController.swift in Sources */,
+				83A340BE2154E299004105F6 /* StringProcess.swift in Sources */,
 				83CE89B62154977E0007C76F /* AppDelegate.swift in Sources */,
+				83A340C22154E9FC004105F6 /* HomeController.swift in Sources */,
+				83A340C02154E380004105F6 /* HttpClient.swift in Sources */,
 				83A340A82154CC00004105F6 /* Constants.swift in Sources */,
+				83A340BA2154E169004105F6 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
