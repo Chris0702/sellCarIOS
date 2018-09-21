@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83CE89B62154977E0007C76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B52154977E0007C76F /* AppDelegate.swift */; };
+		83CE89B82154977E0007C76F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B72154977E0007C76F /* ViewController.swift */; };
+		83CE89BB2154977E0007C76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE89B92154977E0007C76F /* Main.storyboard */; };
+		83CE89BD2154977F0007C76F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83CE89BC2154977F0007C76F /* Assets.xcassets */; };
+		83CE89C02154977F0007C76F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE89BE2154977F0007C76F /* LaunchScreen.storyboard */; };
+		83CE89CB2154977F0007C76F /* sellCarIOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89CA2154977F0007C76F /* sellCarIOSTests.swift */; };
+		83CE89D62154977F0007C76F /* sellCarIOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89D52154977F0007C76F /* sellCarIOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83CE89C72154977F0007C76F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CE89AA2154977E0007C76F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CE89B12154977E0007C76F;
+			remoteInfo = sellCarIOS;
+		};
+		83CE89D22154977F0007C76F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CE89AA2154977E0007C76F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CE89B12154977E0007C76F;
+			remoteInfo = sellCarIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		83CE89B22154977E0007C76F /* sellCarIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sellCarIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CE89B52154977E0007C76F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83CE89B72154977E0007C76F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83CE89BA2154977E0007C76F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83CE89BC2154977F0007C76F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83CE89BF2154977F0007C76F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		83CE89C12154977F0007C76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CE89C62154977F0007C76F /* sellCarIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sellCarIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CE89CA2154977F0007C76F /* sellCarIOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sellCarIOSTests.swift; sourceTree = "<group>"; };
+		83CE89CC2154977F0007C76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83CE89D12154977F0007C76F /* sellCarIOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sellCarIOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83CE89D52154977F0007C76F /* sellCarIOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sellCarIOSUITests.swift; sourceTree = "<group>"; };
+		83CE89D72154977F0007C76F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83CE89AF2154977E0007C76F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CE89C32154977F0007C76F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CE89CE2154977F0007C76F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83CE89A92154977E0007C76F = {
+			isa = PBXGroup;
+			children = (
+				83CE89B42154977E0007C76F /* sellCarIOS */,
+				83CE89C92154977F0007C76F /* sellCarIOSTests */,
+				83CE89D42154977F0007C76F /* sellCarIOSUITests */,
+				83CE89B32154977E0007C76F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83CE89B32154977E0007C76F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83CE89B22154977E0007C76F /* sellCarIOS.app */,
+				83CE89C62154977F0007C76F /* sellCarIOSTests.xctest */,
+				83CE89D12154977F0007C76F /* sellCarIOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83CE89B42154977E0007C76F /* sellCarIOS */ = {
+			isa = PBXGroup;
+			children = (
+				83CE89B52154977E0007C76F /* AppDelegate.swift */,
+				83CE89B72154977E0007C76F /* ViewController.swift */,
+				83CE89B92154977E0007C76F /* Main.storyboard */,
+				83CE89BC2154977F0007C76F /* Assets.xcassets */,
+				83CE89BE2154977F0007C76F /* LaunchScreen.storyboard */,
+				83CE89C12154977F0007C76F /* Info.plist */,
+			);
+			path = sellCarIOS;
+			sourceTree = "<group>";
+		};
+		83CE89C92154977F0007C76F /* sellCarIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				83CE89CA2154977F0007C76F /* sellCarIOSTests.swift */,
+				83CE89CC2154977F0007C76F /* Info.plist */,
+			);
+			path = sellCarIOSTests;
+			sourceTree = "<group>";
+		};
+		83CE89D42154977F0007C76F /* sellCarIOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				83CE89D52154977F0007C76F /* sellCarIOSUITests.swift */,
+				83CE89D72154977F0007C76F /* Info.plist */,
+			);
+			path = sellCarIOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83CE89B12154977E0007C76F /* sellCarIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CE89DA2154977F0007C76F /* Build configuration list for PBXNativeTarget "sellCarIOS" */;
+			buildPhases = (
+				83CE89AE2154977E0007C76F /* Sources */,
+				83CE89AF2154977E0007C76F /* Frameworks */,
+				83CE89B02154977E0007C76F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sellCarIOS;
+			productName = sellCarIOS;
+			productReference = 83CE89B22154977E0007C76F /* sellCarIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		83CE89C52154977F0007C76F /* sellCarIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CE89DD2154977F0007C76F /* Build configuration list for PBXNativeTarget "sellCarIOSTests" */;
+			buildPhases = (
+				83CE89C22154977F0007C76F /* Sources */,
+				83CE89C32154977F0007C76F /* Frameworks */,
+				83CE89C42154977F0007C76F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83CE89C82154977F0007C76F /* PBXTargetDependency */,
+			);
+			name = sellCarIOSTests;
+			productName = sellCarIOSTests;
+			productReference = 83CE89C62154977F0007C76F /* sellCarIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		83CE89D02154977F0007C76F /* sellCarIOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83CE89E02154977F0007C76F /* Build configuration list for PBXNativeTarget "sellCarIOSUITests" */;
+			buildPhases = (
+				83CE89CD2154977F0007C76F /* Sources */,
+				83CE89CE2154977F0007C76F /* Frameworks */,
+				83CE89CF2154977F0007C76F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83CE89D32154977F0007C76F /* PBXTargetDependency */,
+			);
+			name = sellCarIOSUITests;
+			productName = sellCarIOSUITests;
+			productReference = 83CE89D12154977F0007C76F /* sellCarIOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CE89AA2154977E0007C76F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Chris;
+				TargetAttributes = {
+					83CE89B12154977E0007C76F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					83CE89C52154977F0007C76F = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 83CE89B12154977E0007C76F;
+					};
+					83CE89D02154977F0007C76F = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 83CE89B12154977E0007C76F;
+					};
+				};
+			};
+			buildConfigurationList = 83CE89AD2154977E0007C76F /* Build configuration list for PBXProject "sellCarIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CE89A92154977E0007C76F;
+			productRefGroup = 83CE89B32154977E0007C76F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83CE89B12154977E0007C76F /* sellCarIOS */,
+				83CE89C52154977F0007C76F /* sellCarIOSTests */,
+				83CE89D02154977F0007C76F /* sellCarIOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83CE89B02154977E0007C76F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CE89C02154977F0007C76F /* LaunchScreen.storyboard in Resources */,
+				83CE89BD2154977F0007C76F /* Assets.xcassets in Resources */,
+				83CE89BB2154977E0007C76F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CE89C42154977F0007C76F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CE89CF2154977F0007C76F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83CE89AE2154977E0007C76F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CE89B82154977E0007C76F /* ViewController.swift in Sources */,
+				83CE89B62154977E0007C76F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CE89C22154977F0007C76F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CE89CB2154977F0007C76F /* sellCarIOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CE89CD2154977F0007C76F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CE89D62154977F0007C76F /* sellCarIOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83CE89C82154977F0007C76F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83CE89B12154977E0007C76F /* sellCarIOS */;
+			targetProxy = 83CE89C72154977F0007C76F /* PBXContainerItemProxy */;
+		};
+		83CE89D32154977F0007C76F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83CE89B12154977E0007C76F /* sellCarIOS */;
+			targetProxy = 83CE89D22154977F0007C76F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		83CE89B92154977E0007C76F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83CE89BA2154977E0007C76F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		83CE89BE2154977F0007C76F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83CE89BF2154977F0007C76F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83CE89D82154977F0007C76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83CE89D92154977F0007C76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83CE89DB2154977F0007C76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sellCarIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.sellCarIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83CE89DC2154977F0007C76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sellCarIOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.sellCarIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83CE89DE2154977F0007C76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sellCarIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.sellCarIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sellCarIOS.app/sellCarIOS";
+			};
+			name = Debug;
+		};
+		83CE89DF2154977F0007C76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sellCarIOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.sellCarIOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sellCarIOS.app/sellCarIOS";
+			};
+			name = Release;
+		};
+		83CE89E12154977F0007C76F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sellCarIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.sellCarIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sellCarIOS;
+			};
+			name = Debug;
+		};
+		83CE89E22154977F0007C76F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sellCarIOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chris.sellCarIOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = sellCarIOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83CE89AD2154977E0007C76F /* Build configuration list for PBXProject "sellCarIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CE89D82154977F0007C76F /* Debug */,
+				83CE89D92154977F0007C76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CE89DA2154977F0007C76F /* Build configuration list for PBXNativeTarget "sellCarIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CE89DB2154977F0007C76F /* Debug */,
+				83CE89DC2154977F0007C76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CE89DD2154977F0007C76F /* Build configuration list for PBXNativeTarget "sellCarIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CE89DE2154977F0007C76F /* Debug */,
+				83CE89DF2154977F0007C76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CE89E02154977F0007C76F /* Build configuration list for PBXNativeTarget "sellCarIOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CE89E12154977F0007C76F /* Debug */,
+				83CE89E22154977F0007C76F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CE89AA2154977E0007C76F /* Project object */;
+}
