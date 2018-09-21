@@ -1,0 +1,38 @@
+#top{
+	position: relative;
+	width: 100%;
+	height: 8%;
+}
+
+#content{
+	position: relative;
+	width: 100%;
+	height: 86%;
+	overflow:auto;
+	line-height:100%;
+	font-size: 1em;
+}
+
+#bottom{
+	width: 100%;
+	height: 5%;
+}
+
+#address{
+	height: 100px;
+}
+
+.item{
+	margin-top: 3%;
+}
+
+.must{
+	color:red;
+}
+
+.btn-ref{
+	height:100%;
+}
+.btn-title {
+	height:100%;
+}

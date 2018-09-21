@@ -1,0 +1,43 @@
+#top{
+	position: relative;
+	width: 100%;
+	height: 50%;
+
+	background-image: url(../image/logo.png);
+	background-size: 50% auto;
+	background-position: center 80%;
+	background-repeat: no-repeat;
+}
+
+#content{
+	position: relative;
+	width: 60%;
+	height: 44%;
+	/*height: 44%;*/
+	margin-left:20%;
+	margin-right:20%;
+	
+	/*background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;*/
+}
+
+#reference{
+	position: relative;
+	/*height: 44%;*/
+	margin-left:20%;
+	margin-right:20%;
+	margin-top: 10%;
+	/*background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;*/
+}
+
+#bottom{
+	width: 100%;
+	height: 5%;
+}
+
+.btn-ref{
+	height:100%;
+}

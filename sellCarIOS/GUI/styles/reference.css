@@ -1,0 +1,38 @@
+#content{
+	position: relative;
+	width: 100%;
+	height: 94%;
+	overflow:auto;
+	line-height:100%;
+}
+
+#bottom{
+	width: 100%;
+	height: 5%;
+}
+
+
+#back{
+	height: 5%;
+}
+
+.item{
+	margin-top: 5%;
+}
+
+.must{
+	color:red;
+}
+
+#referenceTitle{
+	font-size: 2em;
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.btn-ref{
+	height:100%;
+}
+.btn-title {
+	height:100%;
+}

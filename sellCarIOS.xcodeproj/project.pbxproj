@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		49211E4A56A2A6ECB379AFF8 /* Pods_sellCarIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D9FFD7F368BBD49B648A332 /* Pods_sellCarIOS.framework */; };
+		83A340A52154CB0B004105F6 /* GUI in Resources */ = {isa = PBXBuildFile; fileRef = 83A340A42154CB0B004105F6 /* GUI */; };
+		83A340A82154CC00004105F6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340A72154CC00004105F6 /* Constants.swift */; };
 		83CE89B62154977E0007C76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B52154977E0007C76F /* AppDelegate.swift */; };
 		83CE89B82154977E0007C76F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B72154977E0007C76F /* ViewController.swift */; };
 		83CE89BB2154977E0007C76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE89B92154977E0007C76F /* Main.storyboard */; };
@@ -40,6 +42,8 @@
 		0801746D84A538A10B342691 /* Pods-sellCarIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sellCarIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-sellCarIOS/Pods-sellCarIOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1DB00DE573CB9E98AE34B654 /* Pods_sellCarIOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sellCarIOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6122625AD6A690BDB9648638 /* Pods-sellCarIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sellCarIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-sellCarIOS/Pods-sellCarIOS.release.xcconfig"; sourceTree = "<group>"; };
+		83A340A42154CB0B004105F6 /* GUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = GUI; sourceTree = "<group>"; };
+		83A340A72154CC00004105F6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		83CE89B22154977E0007C76F /* sellCarIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sellCarIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CE89B52154977E0007C76F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83CE89B72154977E0007C76F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		83A340A62154CBB8004105F6 /* define */ = {
+			isa = PBXGroup;
+			children = (
+				83A340A72154CC00004105F6 /* Constants.swift */,
+			);
+			path = define;
+			sourceTree = "<group>";
+		};
 		83CE89A92154977E0007C76F = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +149,8 @@
 		83CE89B42154977E0007C76F /* sellCarIOS */ = {
 			isa = PBXGroup;
 			children = (
+				83A340A62154CBB8004105F6 /* define */,
+				83A340A42154CB0B004105F6 /* GUI */,
 				83CE89B52154977E0007C76F /* AppDelegate.swift */,
 				83CE89B72154977E0007C76F /* ViewController.swift */,
 				83CE89B92154977E0007C76F /* Main.storyboard */,
@@ -273,6 +287,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A340A52154CB0B004105F6 /* GUI in Resources */,
 				83CE89C02154977F0007C76F /* LaunchScreen.storyboard in Resources */,
 				83CE89BD2154977F0007C76F /* Assets.xcassets in Resources */,
 				83CE89BB2154977E0007C76F /* Main.storyboard in Resources */,
@@ -301,15 +316,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-sellCarIOSTests-checkManifestLockResult.txt",
 			);
@@ -323,15 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-sellCarIOS-checkManifestLockResult.txt",
 			);
@@ -345,15 +352,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-sellCarIOS/Pods-sellCarIOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Toaster/Toaster.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toaster.framework",
 			);
@@ -367,15 +370,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-sellCarIOSUITests-checkManifestLockResult.txt",
 			);
@@ -393,6 +392,7 @@
 			files = (
 				83CE89B82154977E0007C76F /* ViewController.swift in Sources */,
 				83CE89B62154977E0007C76F /* AppDelegate.swift in Sources */,
+				83A340A82154CC00004105F6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
