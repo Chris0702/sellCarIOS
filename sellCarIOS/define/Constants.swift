@@ -63,32 +63,43 @@ class Constants {
     public static let SOCKET_CONNECT_EVENT = "connect";
     
     //page
-    public static let CONTROL_PAGE_NAME: String = "Controller";
-    public static let ACTION_LOG_PAGE_NAME: String = "actionLog";
-    public static let ALARM_LOG_PAGE_NAME: String = "alarmLog";
-    public static let ALARM_SUMMARY_LOG_PAGE_NAME: String = "alarmSummary";
-    public static let CONFIG_PAGE_NAME: String = "config";
-    public static let HOME_PAGE_NAME: String = "homePage";
-    public static let IP_INPUT_PAGE_NAME: String = "ipInput";
-    public static let LOGIN_PAGE_NAME : String = "login";
-    public static let SINGLE_VALUE_PAGE_NAME: String = "singleValue";
-    public static let TAGS_INFO_GROUP_PAGE_NAME: String = "tagsInfoGroup";
-    public static let TAGS_INFO_LIST_PAGE_NAME: String = "tagsInfoList";
-    public static let TAGS_INFO_VALUE_PAGE_NAME: String = "tagsInfoValue";
-    public static let TAGS_INFO_PAGE_NAME: String = "tagsInfo";
-    public static let TREND_PAGE_NAME: String = "trend";
-    public static let TREND_LIST_PAGE_NAME: String = "trendList";
-    public static let G_MAP_PAGE_NAME: String = "map";
-    public static let NODE_STATUS_PAGE_NAME: String = "nodeStatus";
-    public static let DASHBOARD_VIEW_PAGE_NAME: String = "dashboard";
-    // 2018.05.29 Elvis for gmap and bmap
-    public static let MAP_LIST_PAGE_NAME = "mapList"
-    public static let B_MAP_PAGE_NAME = "bmapPage"
-    // 2018.06.13 Elvis for data log trend
-    public static let DATA_LOG_SETTING_PAGE_NAME = "dataLogSetting"
-    public static let DATA_LOG_LIST_PAGE_NAME = "dataLogList"
-    public static let DATA_LOG_PAGE_NAME = "dataLog"
     
+    
+    public static let CONTROL_PAGE_NAME: String = "controller";
+    public static let HOME_PAGE_NAME: String = "homePage";
+    public static let POSTER_PAGE_NAME: String = "posterPage";
+    public static let PRICE_PAGE_NAME: String = "pricePage";
+    public static let TEST_DRIVE_PAGE_NAME: String = "testDrivePage";
+    public static let REFERENCE_PAGE_NAME: String = "referencePage";
+    
+    
+    
+//    public static let CONTROL_PAGE_NAME: String = "Controller";
+//    public static let ACTION_LOG_PAGE_NAME: String = "actionLog";
+//    public static let ALARM_LOG_PAGE_NAME: String = "alarmLog";
+//    public static let ALARM_SUMMARY_LOG_PAGE_NAME: String = "alarmSummary";
+//    public static let CONFIG_PAGE_NAME: String = "config";
+//    public static let HOME_PAGE_NAME: String = "homePage";
+//    public static let IP_INPUT_PAGE_NAME: String = "ipInput";
+//    public static let LOGIN_PAGE_NAME : String = "login";
+//    public static let SINGLE_VALUE_PAGE_NAME: String = "singleValue";
+//    public static let TAGS_INFO_GROUP_PAGE_NAME: String = "tagsInfoGroup";
+//    public static let TAGS_INFO_LIST_PAGE_NAME: String = "tagsInfoList";
+//    public static let TAGS_INFO_VALUE_PAGE_NAME: String = "tagsInfoValue";
+//    public static let TAGS_INFO_PAGE_NAME: String = "tagsInfo";
+//    public static let TREND_PAGE_NAME: String = "trend";
+//    public static let TREND_LIST_PAGE_NAME: String = "trendList";
+//    public static let G_MAP_PAGE_NAME: String = "map";
+//    public static let NODE_STATUS_PAGE_NAME: String = "nodeStatus";
+//    public static let DASHBOARD_VIEW_PAGE_NAME: String = "dashboard";
+//    // 2018.05.29 Elvis for gmap and bmap
+//    public static let MAP_LIST_PAGE_NAME = "mapList"
+//    public static let B_MAP_PAGE_NAME = "bmapPage"
+//    // 2018.06.13 Elvis for data log trend
+//    public static let DATA_LOG_SETTING_PAGE_NAME = "dataLogSetting"
+//    public static let DATA_LOG_LIST_PAGE_NAME = "dataLogList"
+//    public static let DATA_LOG_PAGE_NAME = "dataLog"
+//
     //page config
     public static var GO_HOME_PAGE: Bool = false;
     
@@ -97,7 +108,15 @@ class Constants {
     public static let DASHBOARD_VIEW_VIEW_CONTROLLER_NAME: String = "dashboardViewViewController";
     
     //local web url
-    public static let HOMEL_WEB_URL: String = "home";
+    public static let HOME_WEB_URL: String = "home";
+    public static let POSTER_WEB_URL: String = "poster";
+    public static let PRICE_WEB_URL: String = "price";
+    public static let TEST_DRIVE_WEB_URL: String = "testDrive";
+    public static let REFERENCE_WEB_URL: String = "reference";
+    
+
+    
+    
     
     
     public static let ACTION_LOG_LOCAL_WEB_URL: String = "actionLog";
@@ -113,7 +132,7 @@ class Constants {
     public static let TAGS_INFO_GROUP_LOCAL_WEB_URL: String  = "tagsInfoGroup";
     public static let TAGS_INFO_LIST_LOCAL_WEB_URL: String  = "tagsInfoList";
     public static let TAGS_INFO_VALUE_LOCAL_WEB_URL : String = "tagsInfoValue";
-    public static let WEB_LOCAL_DIRECTORY: String = "GUI";
+    public static let WEB_LOCAL_DIRECTORY: String = "GUI/views";
     public static var DASHBOARD_VIEW_WEB_URL: String = "wadashboard/dashboardviewer";
     // 2018.05.23 Elvis for gmap and bmap
     public static let MAP_LOCAL_WEB_URL = "map"

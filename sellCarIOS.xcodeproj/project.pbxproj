@@ -15,6 +15,10 @@
 		83A340BE2154E299004105F6 /* StringProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340BD2154E299004105F6 /* StringProcess.swift */; };
 		83A340C02154E380004105F6 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340BF2154E380004105F6 /* HttpClient.swift */; };
 		83A340C22154E9FC004105F6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340C12154E9FC004105F6 /* HomeController.swift */; };
+		83A340C42156447C004105F6 /* PosterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340C32156447C004105F6 /* PosterController.swift */; };
+		83A340C62156449F004105F6 /* PriceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340C52156449F004105F6 /* PriceController.swift */; };
+		83A340C8215644B2004105F6 /* ReferenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340C7215644B2004105F6 /* ReferenceController.swift */; };
+		83A340CA215644C4004105F6 /* TestDriveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A340C9215644C4004105F6 /* TestDriveController.swift */; };
 		83CE89B62154977E0007C76F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B52154977E0007C76F /* AppDelegate.swift */; };
 		83CE89B82154977E0007C76F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CE89B72154977E0007C76F /* ViewController.swift */; };
 		83CE89BB2154977E0007C76F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83CE89B92154977E0007C76F /* Main.storyboard */; };
@@ -54,6 +58,10 @@
 		83A340BD2154E299004105F6 /* StringProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProcess.swift; sourceTree = "<group>"; };
 		83A340BF2154E380004105F6 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
 		83A340C12154E9FC004105F6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		83A340C32156447C004105F6 /* PosterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterController.swift; sourceTree = "<group>"; };
+		83A340C52156449F004105F6 /* PriceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceController.swift; sourceTree = "<group>"; };
+		83A340C7215644B2004105F6 /* ReferenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferenceController.swift; sourceTree = "<group>"; };
+		83A340C9215644C4004105F6 /* TestDriveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDriveController.swift; sourceTree = "<group>"; };
 		83CE89B22154977E0007C76F /* sellCarIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sellCarIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83CE89B52154977E0007C76F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83CE89B72154977E0007C76F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +147,10 @@
 			children = (
 				83A340BB2154E233004105F6 /* Controller.swift */,
 				83A340C12154E9FC004105F6 /* HomeController.swift */,
+				83A340C32156447C004105F6 /* PosterController.swift */,
+				83A340C52156449F004105F6 /* PriceController.swift */,
+				83A340C7215644B2004105F6 /* ReferenceController.swift */,
+				83A340C9215644C4004105F6 /* TestDriveController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -422,7 +434,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				83A340BC2154E233004105F6 /* Controller.swift in Sources */,
+				83A340C62156449F004105F6 /* PriceController.swift in Sources */,
+				83A340CA215644C4004105F6 /* TestDriveController.swift in Sources */,
 				83CE89B82154977E0007C76F /* ViewController.swift in Sources */,
+				83A340C42156447C004105F6 /* PosterController.swift in Sources */,
+				83A340C8215644B2004105F6 /* ReferenceController.swift in Sources */,
 				83A340BE2154E299004105F6 /* StringProcess.swift in Sources */,
 				83CE89B62154977E0007C76F /* AppDelegate.swift in Sources */,
 				83A340C22154E9FC004105F6 /* HomeController.swift in Sources */,

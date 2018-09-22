@@ -25,7 +25,7 @@ class ViewController: UIViewController , WKScriptMessageHandler {
     
     var webView: WKWebView? = nil
     var controlModel: Model = Model()
-    var urlPage: String = Constants.HOMEL_WEB_URL
+    var urlPage: String = Constants.HOME_WEB_URL
     
     override func loadView() {
         super.loadView()

@@ -125,7 +125,6 @@ class Model: NSObject {
     func getFileURLRequest(localWebURL:String) -> URLRequest
     {
         let url = Bundle.main.url(forResource: localWebURL, withExtension: Constants.HTML, subdirectory: Constants.WEB_LOCAL_DIRECTORY)
-        print(url)
         let request = NSURLRequest(url: url!)
         return request as URLRequest
     }
@@ -165,79 +164,21 @@ class Model: NSObject {
     {
         print("change page to : \(page)");
         switch page {
-//        case Constants.LOGIN_PAGE_NAME:
-//            releaseController();
-//            controller = LoginController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.LOGIN_LOCAL_WEB_URL),alarmSummary:false)
         case Constants.HOME_PAGE_NAME:
             releaseController();
-            print("change page to 222222: \(page)");
-            controller = HomeController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.HOMEL_WEB_URL))
-//        case Constants.CONFIG_PAGE_NAME:
-//            releaseController();
-//            controller = ConfigController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.CONFIG_LOCAL_WEB_URL))
-//        case Constants.ALARM_LOG_PAGE_NAME:
-//            releaseController();
-//            controller = AlarmLogController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.ALARM_LOG_LOCAL_WEB_URL))
-//        case Constants.ACTION_LOG_PAGE_NAME:
-//            releaseController();
-//            controller = ActionLogController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.ACTION_LOG_LOCAL_WEB_URL))
-//        case Constants.ALARM_SUMMARY_LOG_PAGE_NAME:
-//            releaseController();
-//            controller = AlarmSummaryController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.ALARM_SUMMARY_LOG_LOCAL_WEB_URL))
-//        case Constants.TREND_LIST_PAGE_NAME:
-//            releaseController();
-//            controller = TrendListController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.TREND_LIST_LOCAL_WEB_URL))
-//        case Constants.TREND_PAGE_NAME:
-//            releaseController();
-//            controller = TrendController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.TREND_LOCAL_WEB_URL))
-//        case Constants.TAGS_INFO_GROUP_PAGE_NAME:
-//            releaseController();
-//            controller = TagsInfoGroupController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.TAGS_INFO_GROUP_LOCAL_WEB_URL))
-//        case Constants.TAGS_INFO_LIST_PAGE_NAME:
-//            releaseController();
-//            controller = TagsInfoListController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.TAGS_INFO_LIST_LOCAL_WEB_URL))
-//        case Constants.TAGS_INFO_VALUE_PAGE_NAME:
-//            releaseController();
-//            controller = TagsInfoValueController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.TAGS_INFO_VALUE_LOCAL_WEB_URL))
-//        case Constants.NODE_STATUS_PAGE_NAME:
-//            releaseController();
-//            controller = NodeStatusController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.NODE_STATUS_LOCAL_WEB_URL))
-//        case Constants.DASHBOARD_VIEW_PAGE_NAME:
-//            //releaseController();
-//            controller?.releaseResource()
-//            changeViewController(viewControllerName:Constants.DASHBOARD_VIEW_VIEW_CONTROLLER_NAME)
-//        // 2018.05.24 Elvis for gmap and bmap
-//        case Constants.MAP_LIST_PAGE_NAME:
-//            releaseController()
-//            controller = MapListController(webView: webView, model: self, urlRequest: self.getFileURLRequest(localWebURL: Constants.MAP_LIST_LOCAL_WEB_URL))
-//        case Constants.G_MAP_PAGE_NAME:
-//            releaseController()
-//            let countryCode = (Locale.current as NSLocale).object(forKey: .countryCode) as? String
-//            print("countryCode: \(String(describing: countryCode))")
-//            if let code = countryCode, code.lowercased() == "cn" {
-//                controller = MapController(webView: webView, model: self, urlRequest: self.getFileURLRequest(localWebURL: Constants.MAP_IN_CHINA_LOCAL_WEB_URL))
-//            } else {
-//                controller = MapController(webView: webView, model: self, urlRequest: self.getFileURLRequest(localWebURL: Constants.MAP_LOCAL_WEB_URL))
-//            }
-//        case Constants.B_MAP_PAGE_NAME:
-//            releaseController()
-//            controller = MapController(webView: webView, model: self, urlRequest: self.getFileURLRequest(localWebURL: Constants.BAIDU_MAP_LOCAL_WEB_URL))
-//        // 2018.06.13 Elvis for data log list
-//        case Constants.DATA_LOG_LIST_PAGE_NAME:
-//            releaseController()
-//            controller = DataLogListController(webView: webView, model: self, urlRequest: self.getFileURLRequest(localWebURL: Constants.DATA_LOG_LIST_PAGE_NAME))
-//        // 2018.06.15 Elvis for data log
-//        case Constants.DATA_LOG_PAGE_NAME:
-//            releaseController()
-//            controller = DataLogController(webView: webView, model: self, urlRequest: self.getFileURLRequest(localWebURL: Constants.DATA_LOG_PAGE_NAME))
-//            //if let v = viewController {
-//            //    v.performSegue(withIdentifier: "showDataLog", sender: self)
-//        //}
-//        case Constants.DATA_LOG_SETTING_PAGE_NAME:
-//            //controller = DataLogSettingController(webView: webView, model: self, urlRequest: self.getFileURLRequest(localWebURL: Constants.DATA_LOG_SETTING_PAGE_NAME))
-//            if let v = viewController {
-//                v.performSegue(withIdentifier: "showDataLogSetting", sender: self)
-//            }
+            controller = HomeController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.HOME_WEB_URL))
+        case Constants.POSTER_PAGE_NAME:
+            releaseController();
+            controller = PosterController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.POSTER_WEB_URL))
+        case Constants.PRICE_PAGE_NAME:
+            releaseController();
+            controller = PriceController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.PRICE_WEB_URL))
+        case Constants.TEST_DRIVE_PAGE_NAME:
+            releaseController();
+            controller = TestDriveController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.TEST_DRIVE_WEB_URL))
+        case Constants.REFERENCE_PAGE_NAME:
+            releaseController();
+            controller = ReferenceController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.REFERENCE_WEB_URL))
         default:
             Toast(text: "頁面尚未實作").show()
             break
