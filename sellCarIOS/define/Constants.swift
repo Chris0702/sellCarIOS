@@ -90,34 +90,6 @@ class Constants {
     public static let TEST_DRIVE_PAGE_NAME: String = "testDrivePage";
     public static let REFERENCE_PAGE_NAME: String = "referencePage";
     
-    
-    
-//    public static let CONTROL_PAGE_NAME: String = "Controller";
-//    public static let ACTION_LOG_PAGE_NAME: String = "actionLog";
-//    public static let ALARM_LOG_PAGE_NAME: String = "alarmLog";
-//    public static let ALARM_SUMMARY_LOG_PAGE_NAME: String = "alarmSummary";
-//    public static let CONFIG_PAGE_NAME: String = "config";
-//    public static let HOME_PAGE_NAME: String = "homePage";
-//    public static let IP_INPUT_PAGE_NAME: String = "ipInput";
-//    public static let LOGIN_PAGE_NAME : String = "login";
-//    public static let SINGLE_VALUE_PAGE_NAME: String = "singleValue";
-//    public static let TAGS_INFO_GROUP_PAGE_NAME: String = "tagsInfoGroup";
-//    public static let TAGS_INFO_LIST_PAGE_NAME: String = "tagsInfoList";
-//    public static let TAGS_INFO_VALUE_PAGE_NAME: String = "tagsInfoValue";
-//    public static let TAGS_INFO_PAGE_NAME: String = "tagsInfo";
-//    public static let TREND_PAGE_NAME: String = "trend";
-//    public static let TREND_LIST_PAGE_NAME: String = "trendList";
-//    public static let G_MAP_PAGE_NAME: String = "map";
-//    public static let NODE_STATUS_PAGE_NAME: String = "nodeStatus";
-//    public static let DASHBOARD_VIEW_PAGE_NAME: String = "dashboard";
-//    // 2018.05.29 Elvis for gmap and bmap
-//    public static let MAP_LIST_PAGE_NAME = "mapList"
-//    public static let B_MAP_PAGE_NAME = "bmapPage"
-//    // 2018.06.13 Elvis for data log trend
-//    public static let DATA_LOG_SETTING_PAGE_NAME = "dataLogSetting"
-//    public static let DATA_LOG_LIST_PAGE_NAME = "dataLogList"
-//    public static let DATA_LOG_PAGE_NAME = "dataLog"
-//
     //page config
     public static var GO_HOME_PAGE: Bool = false;
     
@@ -163,52 +135,7 @@ class Constants {
     public static let DATA_LOG_LIST_LOCAL_WEB_URL = "dataLogList"
     public static let DATA_LOG_LOCAL_WEB_URL = "dataLog"
     
-    //table user sql
-    public static let TABLE_USER_SQL = "User";
-    public static let USER_ID_SQL = "UserId";
-    public static let USER_USERNAME_SQL = "username";
-    public static let USER_PASSWORD_SQL = "password";
-    public static let USER_PROJECT_NAME_SQL = "projectName";
-    public static let USER_SERVER_TOKEN_SQL = "serverToken";
-    public static let USER_SERVER_IP_SQL = "ip";
-    public static let USER_TABLE_CREATE_SQL = "CREATE TABLE ";
-    
-    //table project sql
-    public static let TABLE_PROJECT_SQL = "Project";
-    public static let PROJECT_ID_SQL = "ProjectId";
-    public static let PROJECT_IP_SQL = "ip";
-    public static let PROJECT_NAME_SQL = "projectName";
-    
-    //table server sql
-    public static let TABLE_SERVER_SQL = "Server";
-    public static let SERVER_IP_SQL = "ip";
-    public static let SERVER_FIREBASE_TOKEN_ENABLE_SQL = "firebaseTokenEnable";
-    public static let SERVER_UUID_SQL = "UUID";
-    
-    //table systeminfo sql
-    public static let TABLE_SYSTEM_INFO_SQL = "SystemInfo";
-    public static let SYSTEM_INFO_ID: String  = "id";
-    public static let SYSTEM_INFO_FIREBASE_TOKEN_SQL = "firebaseToken";
-    public static let SYSTEM_INFO_APNS_TOKEN_SQL = "apnsToken";
-    public static let SYSTEM_INFO_LAST_IP_SQL = "lastIP";
-    public static let SYSTEM_INFO_LAST_USERNAME_SQL = "lastUsername";
-    public static let SYSTEM_INFO_LAST_PASSWORD_SQL = "lastPassword";
-    public static let SYSTEM_INFO_LAST_PROJECT_NAME_SQL = "lastProjectName";
-    public static let SYSTEM_INFO_IS_LOGIN_SQL: String = "isLogin";
-    public static let SYSTEM_INFO_ACTION_LOG_PAGE_NAME_SQL = "actionLogPage";
-    public static let SYSTEM_INFO_ALARM_LOG_PAGE_NAME_SQL = "alarmLogPage";
-    public static let SYSTEM_INFO_ALARM_SUMMARY_LOG_PAGE_NAME_SQL = "alarmSummaryPage";
-    public static let SYSTEM_INFO_TREND_PAGE_NAME_SQL = "trendPage";
-    public static let SYSTEM_INFO_DASHBOARD_PAGE_NAME_SQL = "dashboardPage";
-    public static let SYSTEM_INFO_TAGS_INFO_PAGE_NAME_SQL = "tagsInfoPage";
-    public static let SYSTEM_INFO_G_MAP_PAGE_NAME_SQL = "gMapPage";
-    public static let SYSTEM_INFO_NODE_STATUS_PAGE_NAME_SQL = "nodeStatusPage";
-    public static let SYSTEM_INFO_LAST_SERVER_TOKEN_SQL = "lastServerToken";
-    public static let SYSTEM_INFO_LANGUAGE_SQL = "language";
-    public static let SYSTEM_INFO_DEVICE_ID_SQL = "deviceID";
-    
-    // 2018.06.13 Elvis for data log trend
-    public static let SYSTEM_INFO_DATA_LOG_PAGE_NAME_SQL = "dataLogPage";
+   
     
     //controller command
     public static let INPUT_CONNECT_IP_COMMAND: String = "inputConnectIP";
@@ -342,29 +269,20 @@ class Constants {
     // 2018.06.13 Elvis for data log list
     public static let DATA_LOG_LIST = "dataLogList"
     
+    
+    //rest api type
+    public static var SERVER_API_TYPE = "server";
+    public static var EXE_API_TYPE = "exe";
+    public static var FILE_API_TYPE = "file";
+    public static var USER_API_TYPE = "user";
+    public static var TEST_DRIVE_API_TYPE = "testDrive";
+    public static var CAR_API_TYPE = "car";
+    
     //rest api
-    public static var READ_PROJECT_LIST_REST_API =  "/WADashboard/api/dashboard/v1/mainframes/readProjectList";
-    public static var GET_WEBACCESS_PROJECT_LIST_API =  "/WADashboard/api/dashboard/v6/waConfig/getWebAccessProjectList";
-    public static var GET_VERSION_API =  "/WADashboard/api/dashboard/v6/waConfig/getDashReVer";
-    public static var GET_DASHBOARD_TOKEN_REST_API = "/WADashboard/api/dashboard/v6/auth/getToken";
-    public static var SAVE_MOBILE_INFO_REST_API = "/WADashboard/api/dashboard/v1/mobile/saveMobileInfo";
-    public static var GET_NODE_LIST_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getNodeList";
-    public static var ALARM_ACK_ALL_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/alarmAckAll";
-    public static var ALARM_ACK_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/alarmAck";
-    public static var GET_TAG_LIST_BY_PAGE_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getTagListByPage";
-    public static var UPDATE_NOTIFICATION_REST_API = "/WADashboard/api/dashboard/v1/mobile/updateNotification";
-    public static var SET_TAG_VALUES_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/setTagValues";
-    public static var SUBSCRIBE_NOTIFY_REST_API = "/WADashboard/api/dashboard/v1/mobile/subscribeNotify";
-    public static var UNSUBSCRIBE_NOTIFY_REST_API = "/WADashboard/api/dashboard/v6/mobile/unSubscribeNotify";
-    public static var GET_R_TREND_GROUP_ID_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getRTrendGroupId";
-    public static var GET_R_TREND_CONFIG_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getRTrendConfig";
-    public static var GET_TAGS_DATA_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getTagsData";
-    // 2018.05.24 Elvis for gmap and bmap
-    public static var GET_GOOGLE_MAP_LIST_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getGoogleMapList"
-    public static var GET_BAIDU_MAP_LIST_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getBaiduMapList"
-    public static var GET_GOOGLE_MAP_CONFIG_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getGoogleMapConfig"
-    public static var GET_BAIDU_MAP_CONFIG_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getBaiduMapConfig"
-    // 2018.06.13 Elvis for data log list
-    public static var GET_HIS_TREND_GROUP_ID_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getHisTrendGroupId"
-    public static var GET_HIS_TREND_CONFIG_REST_API = "/WADashboard/api/dashboard/v1/tagAjaxAction/getHisTrendConfig"
+    public static var SERVER_IS_EXIST_API = SERVER_URL + "/server/isExist";
+    public static var GET_LOCAL_PATH_ALL_API = SERVER_URL + "/file/getLocalPathAll";
+    public static var GET_CARS_INFO_BY_COMPANY_API = SERVER_URL + "/car/getCarsInfoByCompany";
+    public static var GET_CARS_INFO_BY_ID_API = SERVER_URL + "/car/getCarsInfoById";
+    public static var ORDER_TEST_DRIVE_API = SERVER_URL + "/testDrive/orderTestDrive";
+    
 }

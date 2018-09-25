@@ -47,7 +47,6 @@ class ViewController: UIViewController , WKScriptMessageHandler {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         Toast(text: "Internet server error2").show()
         // Do any additional setup after loading the view, typically from a nib.
         controlModel.changePage(webView: webView!, page: Constants.HOME_PAGE_NAME)
     }
