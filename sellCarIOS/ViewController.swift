@@ -13,11 +13,9 @@ import Toaster
 class ViewController: UIViewController , WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
         if(message.name == Constants.IOS_PARAMETER_FOR_JAVASCRIPT) {
-            
             let funcMsgDic = StringProcess.convertToDictionary(text: message.body as! String)
             let msg = StringProcess.convertToDictionary(text: funcMsgDic?["msg"] as! String)
-            
-            //print("JavaScript is sending a message \(String(describing: funcMsgDic))")
+            print("JavaScript is sending a message \(String(describing: funcMsgDic))")
             controlModel.scriptCallbackHandler(funcMsgDic:funcMsgDic!, msg: msg!)
         }
     }
@@ -31,7 +29,7 @@ class ViewController: UIViewController , WKScriptMessageHandler {
         super.loadView()
         
         let contentController = WKUserContentController();
-        contentController.add(self, name: Constants.IOS_PARAMETER_FOR_JAVASCRIPT)
+        contentController.add(self , name: Constants.IOS_PARAMETER_FOR_JAVASCRIPT)
         let config = WKWebViewConfiguration()
         config.userContentController = contentController
         config.websiteDataStore = WKWebsiteDataStore.default()

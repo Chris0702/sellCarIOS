@@ -27,7 +27,7 @@ class PriceController: Controller{
     
     override func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
         
-        print("------child controller: home------")
+        print("------child controller: price------")
         
         let command = funcMsgDic[Constants.FUNCNAME] as! String
         switch command {
@@ -50,25 +50,7 @@ class PriceController: Controller{
         }
     }
     
-    //    func getFunctionList()
-    //    {
-    //        let resDic = [Constants.FUNCTION_LIST:[
-    //            Constants.ALARM_LOG: (systemInfo.value(forKey: Constants.SYSTEM_INFO_ALARM_LOG_PAGE_NAME_SQL) as! Bool) ? Constants.TRUE_STRING:Constants.FALSE_STRING,
-    //            Constants.ALARM_SUMMARY: (systemInfo.value(forKey: Constants.SYSTEM_INFO_ALARM_SUMMARY_LOG_PAGE_NAME_SQL) as! Bool) ? Constants.TRUE_STRING:Constants.FALSE_STRING,
-    //            Constants.ACTION_LOG: (systemInfo.value(forKey: Constants.SYSTEM_INFO_ACTION_LOG_PAGE_NAME_SQL) as! Bool) ? Constants.TRUE_STRING:Constants.FALSE_STRING,
-    //            Constants.TREND: (systemInfo.value(forKey: Constants.SYSTEM_INFO_TREND_PAGE_NAME_SQL) as! Bool) ? Constants.TRUE_STRING:Constants.FALSE_STRING,
-    //            Constants.DASHBOARD: (systemInfo.value(forKey: Constants.SYSTEM_INFO_DASHBOARD_PAGE_NAME_SQL) as! Bool) ? Constants.TRUE_STRING:Constants.FALSE_STRING,
-    //            Constants.TAGS_INFO: (systemInfo.value(forKey: Constants.SYSTEM_INFO_TAGS_INFO_PAGE_NAME_SQL) as! Bool) ? Constants.TRUE_STRING:Constants.FALSE_STRING,
-    //            Constants.G_MAP: (systemInfo.value(forKey: Constants.SYSTEM_INFO_G_MAP_PAGE_NAME_SQL) as! Bool) ? Constants.TRUE_STRING:Constants.FALSE_STRING,
-    //            Constants.NODE_STATUS: (systemInfo.value(forKey: Constants.SYSTEM_INFO_NODE_STATUS_PAGE_NAME_SQL) as! Bool) ? Constants.TRUE_STRING:Constants.FALSE_STRING,
-    //            // 2018.06.13 Elvis for data log trend
-    //            Constants.DATA_LOG: (systemInfo.value(forKey: Constants.SYSTEM_INFO_DATA_LOG_PAGE_NAME_SQL) as! Bool) ? Constants.TRUE_STRING:Constants.FALSE_STRING
-    //            ]]
-    //        print("------------getFunctionList-------------\(resDic)")
-    //        evaluateScript(funcName: Constants.INSERT_FUNCTION_LIST_JAVASCRIPT, resDic: resDic, completionHandler: nil)
-    //    }
-    //
     deinit {
-        print("------end home controller---------")
+        print("------end price controller---------")
     }
 }

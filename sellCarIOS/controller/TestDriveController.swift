@@ -27,7 +27,7 @@ class TestDriveController: Controller{
     
     override func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
         
-        print("------child controller: home------")
+        print("------child controller: test drive------")
         
         let command = funcMsgDic[Constants.FUNCNAME] as! String
         switch command {
@@ -69,6 +69,6 @@ class TestDriveController: Controller{
     //    }
     //
     deinit {
-        print("------end home controller---------")
+        print("------end test drive controller---------")
     }
 }

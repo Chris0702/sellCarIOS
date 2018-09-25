@@ -109,6 +109,7 @@ class Constants {
     
     //local web url
     public static let HOME_WEB_URL: String = "home";
+//    public static let HOME_WEB_URL: String = "test";
     public static let POSTER_WEB_URL: String = "poster";
     public static let PRICE_WEB_URL: String = "price";
     public static let TEST_DRIVE_WEB_URL: String = "testDrive";

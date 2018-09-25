@@ -191,24 +191,8 @@ class Model: NSObject {
         Toast(text: text).show()
     }
     
-    func goToAlarmSummaryPage()
-    {
-//        controller?.releaseResource()
-//        controller = nil
-//        controller = LoginController(webView: self.webView!, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.LOGIN_LOCAL_WEB_URL),alarmSummary:true)
-    }
-    
-    //func systemDataAction(projectName:String,serverToken:String)
-    //{
-    //systemData?.systemDataSocket(projectName: projectName, serverToken: serverToken)
-    //}
-    
-    //func systemDataShutDown()
-    //{
-    //systemData?.releaseResource()
-    //}
     
     func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>)  {
-//        controller?.scriptCallbackHandler(funcMsgDic:funcMsgDic, msg: msg)
+        controller?.scriptCallbackHandler(funcMsgDic:funcMsgDic, msg: msg)
     }
 }
