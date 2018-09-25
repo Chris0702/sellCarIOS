@@ -313,34 +313,42 @@ class StringProcess {
         return [:]
     }
     
-    static func updateUrlPath(ip:String,projectName:String,username:String,password:String)
+    static func updateUrlPath()
     {
-        Constants.READ_PROJECT_LIST_REST_API =  getNewRestApiPath(ip:ip,restApiUrl:Constants.READ_PROJECT_LIST_REST_API)
-        Constants.GET_WEBACCESS_PROJECT_LIST_API =  getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_WEBACCESS_PROJECT_LIST_API)
-        Constants.GET_VERSION_API =  getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_VERSION_API)
-        Constants.GET_DASHBOARD_TOKEN_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_DASHBOARD_TOKEN_REST_API)
-        Constants.SAVE_MOBILE_INFO_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.SAVE_MOBILE_INFO_REST_API)
-        Constants.GET_NODE_LIST_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_NODE_LIST_REST_API)
-        Constants.GET_R_TREND_GROUP_ID_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_R_TREND_GROUP_ID_REST_API)
-        Constants.GET_R_TREND_CONFIG_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_R_TREND_CONFIG_REST_API)
-        Constants.GET_TAGS_DATA_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_TAGS_DATA_REST_API)
-        Constants.ALARM_ACK_ALL_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.ALARM_ACK_ALL_REST_API)
-        Constants.GET_TAG_LIST_BY_PAGE_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_TAG_LIST_BY_PAGE_REST_API)
-        Constants.UPDATE_NOTIFICATION_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.UPDATE_NOTIFICATION_REST_API)
-        Constants.ALARM_ACK_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.ALARM_ACK_REST_API)
-        Constants.SET_TAG_VALUES_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.SET_TAG_VALUES_REST_API)
-        Constants.SUBSCRIBE_NOTIFY_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.SUBSCRIBE_NOTIFY_REST_API)
-        Constants.UNSUBSCRIBE_NOTIFY_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.UNSUBSCRIBE_NOTIFY_REST_API)
-        Constants.DASHBOARD_VIEW_WEB_URL = "http://"+ip+"/WADashboard/dashboardviewer?projectName1=\(projectName)&username=\(username)&password=\(password)"
-        // 2018.05.29 Elvis for gmap and bamp
-        Constants.GET_GOOGLE_MAP_LIST_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_GOOGLE_MAP_LIST_REST_API)
-        Constants.GET_GOOGLE_MAP_CONFIG_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_GOOGLE_MAP_CONFIG_REST_API)
-        Constants.GET_BAIDU_MAP_LIST_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_BAIDU_MAP_LIST_REST_API)
-        Constants.GET_BAIDU_MAP_CONFIG_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_BAIDU_MAP_CONFIG_REST_API)
-        // 2018.06.13 Elvis for data log list
-        Constants.GET_HIS_TREND_GROUP_ID_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_HIS_TREND_GROUP_ID_REST_API)
-        Constants.GET_HIS_TREND_CONFIG_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_HIS_TREND_CONFIG_REST_API)
+//        Constants.READ_PROJECT_LIST_REST_API =  getNewRestApiPath(ip:ip,restApiUrl:Constants.READ_PROJECT_LIST_REST_API)
+//        Constants.GET_WEBACCESS_PROJECT_LIST_API =  getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_WEBACCESS_PROJECT_LIST_API)
+//        Constants.GET_VERSION_API =  getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_VERSION_API)
+//        Constants.GET_DASHBOARD_TOKEN_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_DASHBOARD_TOKEN_REST_API)
+//        Constants.SAVE_MOBILE_INFO_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.SAVE_MOBILE_INFO_REST_API)
+//        Constants.GET_NODE_LIST_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_NODE_LIST_REST_API)
+//        Constants.GET_R_TREND_GROUP_ID_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_R_TREND_GROUP_ID_REST_API)
+//        Constants.GET_R_TREND_CONFIG_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_R_TREND_CONFIG_REST_API)
+//        Constants.GET_TAGS_DATA_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_TAGS_DATA_REST_API)
+//        Constants.ALARM_ACK_ALL_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.ALARM_ACK_ALL_REST_API)
+//        Constants.GET_TAG_LIST_BY_PAGE_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.GET_TAG_LIST_BY_PAGE_REST_API)
+//        Constants.UPDATE_NOTIFICATION_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.UPDATE_NOTIFICATION_REST_API)
+//        Constants.ALARM_ACK_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.ALARM_ACK_REST_API)
+//        Constants.SET_TAG_VALUES_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.SET_TAG_VALUES_REST_API)
+//        Constants.SUBSCRIBE_NOTIFY_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.SUBSCRIBE_NOTIFY_REST_API)
+//        Constants.UNSUBSCRIBE_NOTIFY_REST_API = getNewRestApiPath(ip:ip,restApiUrl:Constants.UNSUBSCRIBE_NOTIFY_REST_API)
+//        Constants.DASHBOARD_VIEW_WEB_URL = "http://"+ip+"/WADashboard/dashboardviewer?projectName1=\(projectName)&username=\(username)&password=\(password)"
+//        // 2018.05.29 Elvis for gmap and bamp
+//        Constants.GET_GOOGLE_MAP_LIST_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_GOOGLE_MAP_LIST_REST_API)
+//        Constants.GET_GOOGLE_MAP_CONFIG_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_GOOGLE_MAP_CONFIG_REST_API)
+//        Constants.GET_BAIDU_MAP_LIST_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_BAIDU_MAP_LIST_REST_API)
+//        Constants.GET_BAIDU_MAP_CONFIG_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_BAIDU_MAP_CONFIG_REST_API)
+//        // 2018.06.13 Elvis for data log list
+//        Constants.GET_HIS_TREND_GROUP_ID_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_HIS_TREND_GROUP_ID_REST_API)
+//        Constants.GET_HIS_TREND_CONFIG_REST_API = getNewRestApiPath(ip: ip, restApiUrl: Constants.GET_HIS_TREND_CONFIG_REST_API)
+        
+//          Constants.SERVER_URL = ip
+        
+        
     }
+    
+//    public static String getLocalRestAPI(String apiType,String api) {
+//    return api.substring(api.indexOf("/"+apiType), api.length());
+//    }
     
     static func getNewRestApiPath(ip:String,restApiUrl:String)->String
     {

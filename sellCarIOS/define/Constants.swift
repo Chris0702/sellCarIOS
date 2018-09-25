@@ -11,6 +11,24 @@ import Foundation
 class Constants {
     
     public static var SERVER_URL: String = "";
+    public static var GET_SERVER_URL_REST_API: String = "https://raw.githubusercontent.com/Chris0702/sellCarServer/master/lib/setting/server_url.txt";
+    public static var VERSION_CONTENT: String = "1.0.0";
+    
+    //line
+    public static var LINE_NOTIFY_URL: String  = "https://notify-api.line.me/api/notify";
+    public static var LINE_SUPPORT_AUTH: String  = "Bearer BVcrSpv8eNjk4KjErJvAE1KjvFNc6X2kcI30u0njaNf";
+    public static var LINE_AUTH_NAME: String  = "Authorization";
+    public static var LINE_MESSAGE_NAME: String  = "message";
+    
+    public static var PLEASE_CHECK_NETWORK: String  = "請檢察網際網路是否正常";
+    public static var SERVER_ABMORMAL: String  = "平台維護中請稍後使用";
+    public static var SERVER_ABMORMAL_SUPPORT: String  = "server 異常請快去檢查!!!";
+    public static var SERVER_GIT_URL_ABMORMAL_SUPPORT: String  = "github 異常，抓取不到 server url，請快去檢查!!!";
+    
+//    public static  String SERVER_URL = "";
+//    public static final String GET_SERVER_URL_REST_API = "https://raw.githubusercontent.com/Chris0702/sellCarServer/master/lib/setting/server_url.txt";
+//    public static final String VERSION_CONTENT = "1.0.0";
+//
     
     public static let APNS_PRODUCTION_TYPE: String = "production";
     public static let APNS_DEVELOPMENT_TYPE: String = "development";

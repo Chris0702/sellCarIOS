@@ -9,7 +9,6 @@
 import Foundation
 
 class HttpClient {
-    
     static func get (url:String, successFunc: @escaping (String)->(), errorFunc:@escaping ()-> ()){
         
 //        let systemInfo = SystemInfoRole.shared()
@@ -128,4 +127,46 @@ class HttpClient {
             
         }
     }
+    
+    static func updateServerUrl()
+    {
+        HttpClient.get(url: Constants.GET_SERVER_URL_REST_API,
+                       successFunc: updateServerUrlSuccess,
+                       errorFunc: updateServerUrlError)
+    }
+    
+    static func updateServerUrlSuccess(html:String){
+        print("server url = "+html)
+        do{
+            Constants.SERVER_URL = html
+            StringProcess.updateUrlPath()
+            checkServerIsExist()
+        }catch{
+            updateServerUrlError()
+        }
+    }
+    
+    static func updateServerUrlError(){
+       let controlModel: Model = Model()
+       controlModel.ToastShow(text: Constants.SERVER_GIT_URL_ABMORMAL_SUPPORT)
+    }
+    
+    static func checkServerIsExist(){
+        
+    }
+    
+    static func checkServerIsExistSuccess(html:String){
+        print("ucheckServerIsExistSuccess  = "+html)
+        do{
+            //            try getProjectListSuccessExe(html: html);
+        }catch{
+            checkServerIsExistError()
+        }
+    }
+    
+    static func checkServerIsExistError(){
+        let controlModel: Model = Model()
+        controlModel.ToastShow(text: Constants.SERVER_ABMORMAL_SUPPORT)
+    }
+    
 }

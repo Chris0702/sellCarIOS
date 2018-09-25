@@ -37,21 +37,6 @@ class Model: NSObject {
     {
         viewController = ViewController;
     }
-//    func getSysteminfo() -> SystemInfoRole{
-//        return systemInfo
-//    }
-//
-//    func getUser() -> User{
-//        return user
-//    }
-//
-//    func getServer() -> Server{
-//        return server
-//    }
-//
-//    func getProject() -> Project{
-//        return project
-//    }
     
     func setLoadingView(view:UIImageView)
     {
@@ -93,34 +78,6 @@ class Model: NSObject {
         self.loadingView?.stopAnimating();
     }
     
-//    func isLogin()->Bool
-//    {
-//        if((systemInfo.value(forKey: Constants.SYSTEM_INFO_IS_LOGIN_SQL) as! Bool) == true){
-//            return true;
-//        }else{
-//            return false;
-//        }
-//
-//    }
-//
-//    func logout()
-//    {
-//        systemInfo.setValue(false, forKey: Constants.SYSTEM_INFO_IS_LOGIN_SQL)
-//        systemInfo.updateSystemInfo()
-//    }
-//
-//
-//    func updateApnsToken(newToken:String)
-//    {
-//        systemInfo.setValue(newToken, forKey: Constants.SYSTEM_INFO_APNS_TOKEN_SQL)
-//        systemInfo.updateSystemInfo()
-//    }
-//
-//    func updateFirebaseToken(newToken:String)
-//    {
-//        systemInfo.setValue(newToken, forKey: Constants.SYSTEM_INFO_FIREBASE_TOKEN_SQL)
-//        systemInfo.updateSystemInfo()
-//    }
     
     func getFileURLRequest(localWebURL:String) -> URLRequest
     {
@@ -195,4 +152,5 @@ class Model: NSObject {
     func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>)  {
         controller?.scriptCallbackHandler(funcMsgDic:funcMsgDic, msg: msg)
     }
+    
 }
