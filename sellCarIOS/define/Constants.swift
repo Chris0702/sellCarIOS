@@ -66,23 +66,8 @@ class Constants {
     // 2018.06.15 Elvis for data log
     public static let INSERT_DATA_LOG_JAVASCRIPT = "insertDataLog"
     
-    //socket
-    public static let SOCKET_PATH = "/WADashboard/socket.io";
-    public static let ACTION_LOG_NSP = "/actionlog";
-    public static let ALARM_LOG_NSP = "/alarmlog";
-    public static let ALARM_SUMMARY_LOG_NSP = "/alarmSummary";
-    public static let DATA_NSP = "/data";
-    public static let SYSTEM_DATA_NSP = "/systemData";
-    public static let NODE_STATUS_NSP = "/nodeStatus";
-    public static let SOCKET_SUBSCRIBE_EVENT = "subscribe";
-    public static let SOCKET_STREAM_EVENT = "stream";
-    public static let SOCKET_AUTHENTICATION_EVENT = "authentication";
-    public static let SOCKET_AUTHENTICATED_EVENT = "authenticated";
-    public static let SOCKET_CONNECT_EVENT = "connect";
-    
+
     //page
-    
-    
     public static let CONTROL_PAGE_NAME: String = "controller";
     public static let HOME_PAGE_NAME: String = "homePage";
     public static let POSTER_PAGE_NAME: String = "posterPage";
@@ -105,78 +90,17 @@ class Constants {
     public static let TEST_DRIVE_WEB_URL: String = "testDrive";
     public static let REFERENCE_WEB_URL: String = "reference";
     
-
-    
-    
-    
-    
-    public static let ACTION_LOG_LOCAL_WEB_URL: String = "actionLog";
-    public static let ALARM_LOG_LOCAL_WEB_URL: String = "alarmLog";
-    public static let ALARM_SUMMARY_LOG_LOCAL_WEB_URL: String = "alarmSummary";
-    public static let NODE_STATUS_LOCAL_WEB_URL: String = "nodeStatus";
-    //public static let SINGLE_VALUE_LOCAL_URL: String = "file:///android_asset/login.html";
-    public static let CONFIG_LOCAL_WEB_URL: String = "config";
-    public static let HOME_LOCAL_WEB_URL: String = "home";
-    public static let LOGIN_LOCAL_WEB_URL: String = "login";
-    public static let TREND_LOCAL_WEB_URL: String = "trend";
-    public static let TREND_LIST_LOCAL_WEB_URL: String = "trendList";
-    public static let TAGS_INFO_GROUP_LOCAL_WEB_URL: String  = "tagsInfoGroup";
-    public static let TAGS_INFO_LIST_LOCAL_WEB_URL: String  = "tagsInfoList";
-    public static let TAGS_INFO_VALUE_LOCAL_WEB_URL : String = "tagsInfoValue";
     public static let WEB_LOCAL_DIRECTORY: String = "GUI/views";
-    public static var DASHBOARD_VIEW_WEB_URL: String = "wadashboard/dashboardviewer";
-    // 2018.05.23 Elvis for gmap and bmap
-    public static let MAP_LOCAL_WEB_URL = "map"
-    public static let MAP_IN_CHINA_LOCAL_WEB_URL = "mapInChina"
-    public static let BAIDU_MAP_LOCAL_WEB_URL = "bmapPage"
-    public static let MAP_LIST_LOCAL_WEB_URL = "mapList"
-    // 2018.06.13 Elvis for data log trend
-    public static let DATA_LOG_SETTING_LOCAL_WEB_URL = "dataLogSetting"
-    public static let DATA_LOG_LIST_LOCAL_WEB_URL = "dataLogList"
-    public static let DATA_LOG_LOCAL_WEB_URL = "dataLog"
-    
-   
     
     //controller command
-    public static let INPUT_CONNECT_IP_COMMAND: String = "inputConnectIP";
-    public static let GET_IP_HISTORY_LIST_COMMAND: String = "getIpHistoryList";
-    public static let INPUT_ACCOUNT_COMMAND: String = "inputAccount";
-    public static let GET_ACCOUNT_HISTORY_LIST_COMMAND: String = "getAccountHistoryList";
-    public static let GET_PROJECT_LIST_COMMAND: String = "getProjectList";
-    public static let GET_FUNCTION_LIST_COMMAND: String = "getFunctionList";
-    public static let GET_ALARM_SUMMARY_BY_PAGE_COMMAND: String = "getAlarmSummaryByPage";
-    public static let GET_PROJECT_LIST_BY_IP_COMMAND: String = "getProjectListByIp";
-    public static let GET_NODE_STATUS_COMMAND: String = "getNodeStatus";
-    public static let GET_NODE_LIST_COMMAND: String = "getNodeList";
-    public static let GET_ALARM_LOG_AND_COUNT_COMMAND: String = "getAlarmLogAndCount";
-    public static let GET_ACTION_LOG_AND_COUNT_COMMAND: String = "getActionLogAndCount";
-    public static let SAVE_FUNCTION_LIST_COMMAND: String = "saveFunctionList";
-    public static let ALARM_ACK_COMMAND: String = "alarmAck";
-    public static let ALARM_ACK_ALL_LIST_COMMAND: String = "alarmAckAll";
-    public static let GET_TAGS_LIST_BY_PAGE_COMMAND: String = "getTagsListByPage";
-    public static let GET_TAG_VALUE_COMMAND: String = "getTagValue";
+    
+    public static let  GET_CAR_IMAGE_PATH_BY_FOLDER_COMMAND: String = "getCarImagePathByFolder";
+    public static let  ORDER_TEST_DRIVE_COMMAND: String = "orderTestDrive";
+    public static let  GET_CARS_INFO_BY_COMPANY_COMMAND: String = "getCarsInfoByCompany";
+    public static let  GET_CARS_INFO_BY_ID_COMMAND: String = "getCarsInfoById";
     public static let CHANGE_PAGE_COMMAND: String = "changePage";
-    public static let LOG_OUT_COMMAND: String = "logout";
-    public static let SET_TAG_VALUE_COMMAND: String = "setTagValue";
-    public static let GET_LANGUAGE_COMMAND = "getLanguage";
-    public static let SET_LANGUAGE_COMMAND = "setLanguage";
-    public static let GET_VERSION_COMMAND = "getVersion";
-    public static let GET_R_TREND_GROUP_ID_COMMAND = "getRTrendGroupId";
-    public static let GET_R_TREND_CONFIG_COMMAND = "getRTrendConfig";
-    public static let GET_REAL_TIME_TAG_VALUES_COMMAND = "getRealTimeTagValues";
-    public static let GET_TAGS_DATA_COMMAND = "getTagsData";
     
-    public static let GET_LOCAL_STORAGE_MEM_ALL_COMMAND = "getLocalStorageMemAll";
-    public static let GET_LOCAL_STORAGE_MEM_COMMAND = "getLocalStorageMem";
-    public static let SET_LOCAL_STORAGE_MEM_COMMAND = "setLocalStorageMem";
-    public static let REMOVE_LOCAL_STORAGE_MEM_COMMAND = "removeLocalStorageMem";
-    
-    // 2018.05.23 Elvis for gmap and bmap
-    public static let GET_SELECTED_NODE_COMMAND = "getSelectedNode"
-    public static let GET_MAP_LIST_BY_NODE_COMMAND = "getMapListByNode"
-    public static let GET_MAP_CONFIG = "getMapConfig"
-    // 2018.06.13 Elvis for data log list
-    public static let GET_HIS_TREND_GROUP_ID_COMMAND = "getHisTrendGroupId"
+   
     
     //loadingView
     public static let IMAGE_PROGRESS_0_LOADING_VIEW: String = "progress_0.png";
@@ -192,6 +116,10 @@ class Constants {
     public static let DURATIONN_LOADING_VIEW = 0.8;
     
     //util
+    public static let COMPANY_TYPE: String  = "companyType";
+    public static let FOLDER_NAME: String  = "folderName";
+    public static let POSTER: String  = "poster";
+    
     public static let HTML: String  = "html";
     public static let FUNCNAME: String = "funcName";
     public static let HTTP: String = "http:";

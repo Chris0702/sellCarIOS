@@ -34,6 +34,16 @@ class StringProcess {
         return [:]
     }
     
+    static func getLocalPathAllUrl(folderName:String)->String{
+        //http://35.221.137.207/file/getLocalPathAll?foldername=resource/company/NISSAN/image/poster
+        return Constants.GET_LOCAL_PATH_ALL_API+"?foldername="+folderName
+    }
+    
+    static func getCarImagePathByFolder(company:String,type:String)->String{
+        let folder = "resource/company/"+company+"/image/"+type
+        return getLocalPathAllUrl(folderName:folder)
+    }
+    
     static func updateUrlPath()
     {
         Constants.SERVER_IS_EXIST_API = getLocalRestAPI(apiType: Constants.SERVER_API_TYPE, api: Constants.SERVER_IS_EXIST_API)

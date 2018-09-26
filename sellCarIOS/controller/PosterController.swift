@@ -17,8 +17,10 @@ class PosterController: Controller{
     
     override init(webView: WKWebView, model:Model,urlRequest:URLRequest){
         super.init(webView: webView, model: model,urlRequest:urlRequest)
-        print("----------urlRequest-----------")
+        print("----------urlRequest-----poster------")
         print(urlRequest)
+        print("----------urlRequest-----poster---type---")
+        print(controlModel.getCompanyType())
         print("---------------------")
         webView.load(urlRequest)
     }
@@ -27,26 +29,36 @@ class PosterController: Controller{
     override func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
         
         print("------child controller: poster------")
-        
+        print(msg)
         let command = funcMsgDic[Constants.FUNCNAME] as! String
         switch command {
-            //        case Constants.GET_FUNCTION_LIST_COMMAND:
-            //            getFunctionList()
-            //        case Constants.GET_LANGUAGE_COMMAND:
-        //            insertLanguage();
         case Constants.CHANGE_PAGE_COMMAND:
             changePage(url:msg[Constants.URL] as!String)
-        case Constants.GET_LOCAL_STORAGE_MEM_ALL_COMMAND:
-            insertLocalStorageMemAll()
-        case Constants.GET_LOCAL_STORAGE_MEM_COMMAND:
-            insertLocalStorageMem(key:msg[Constants.KEY] as!String)
-        case Constants.SET_LOCAL_STORAGE_MEM_COMMAND:
-            setLocalStorageMem(key:msg[Constants.KEY] as!String,value:msg[Constants.VALUE] as!String)
-        case Constants.REMOVE_LOCAL_STORAGE_MEM_COMMAND:
-            removeLocalStorageMem(key: msg[Constants.KEY] as!String)
+        case Constants.GET_CAR_IMAGE_PATH_BY_FOLDER_COMMAND:
+            getCarImagePathByFolder(folderName:msg[Constants.FOLDER_NAME] as!String)
+//            changePage(url:msg[Constants.URL] as!String)
+        print("test")
         default:
             print("unknow command")
         }
+    }
+    
+    func getCarImagePathByFolder(folderName:String){
+        //http://35.221.137.207/file/getLocalPathAll?foldername=resource/company/NISSAN/image/poster
+        HttpClient.get(url: StringProcess.getCarImagePathByFolder(company:controlModel.getCompanyType(),type:Constants.POSTER),
+                       successFunc: getCarImagePathByFolderSuccess,
+                       errorFunc: getCarImagePathByFolderError)
+    }
+    
+    func getCarImagePathByFolderSuccess(html: String)
+    {
+        print("----------------------getCarImagePathByFolder"+html)
+        print(html)
+    }
+    
+    func getCarImagePathByFolderError()
+    {
+        print("getCarImagePathByFolder")
     }
     
     deinit {

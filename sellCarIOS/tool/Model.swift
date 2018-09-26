@@ -13,29 +13,32 @@ import Toaster
 
 class Model: NSObject {
     
-//    var systemInfo:SystemInfoRole
-//    var user:User
-//    var server:Server
-//    var project:Project
     var controller: Controller? = nil
     var webView: WKWebView? = nil
     var loadingView: UIImageView? = nil
     var alertLoadingViewController: UIAlertController? = nil
     var viewController :UIViewController? = nil
-    //var systemData: SystemData? = nil
-    //var systeminfo:SystemInfoRole = SystemInfoRole.shared()
-    
+    var compantType :String? = ""
     override init(){
-//        systemInfo = SystemInfoRole.shared();
-//        user = User()
-//        server = Server()
-//        project = Project()
-    //systemData = SystemData()
     }
     
     func setViewController(ViewController:UIViewController)
     {
         viewController = ViewController;
+    }
+    
+    func setCompantType(type:String)
+    {
+        //type=Constants.EMPTY_STRING &&
+        if (type != "")
+        {
+            compantType = type;
+        }
+    }
+    
+    func getCompanyType() -> String
+    {
+        return compantType!
     }
     
     func setLoadingView(view:UIImageView)

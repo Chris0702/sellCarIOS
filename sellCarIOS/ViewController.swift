@@ -41,7 +41,6 @@ class ViewController: UIViewController , WKScriptMessageHandler {
         self.view.addSubview(self.webView!)
         
         controlModel.setViewController(ViewController: self)
-        print("asdasd")
         self.setNeedsStatusBarAppearanceUpdate()
     }
     

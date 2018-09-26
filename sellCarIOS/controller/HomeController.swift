@@ -21,12 +21,16 @@ class HomeController: Controller{
         let command = funcMsgDic[Constants.FUNCNAME] as! String
         switch command {
         case Constants.CHANGE_PAGE_COMMAND:
+            setCompanyType(type:msg[Constants.COMPANY_TYPE] as!String)
             changePage(url:msg[Constants.URL] as!String)
         default:
             print("unknow command")
         }
     }
     
+    func setCompanyType(type:String) {
+        controlModel.setCompantType(type: type)
+    }
     deinit {
         print("------end home controller---------")
     }

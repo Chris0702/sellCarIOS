@@ -9,10 +9,6 @@
 
         var iosMsg = JSON.stringify({ "funcName": funcName, "msg": msg });
         try {
-            console.log('call ios native');
-            console.log(iosMsg)
-            console.log(webkit)
-            console.log('call ios native2222');
             if (webkit && webkit.messageHandlers && webkit.messageHandlers.callIosNativeApp) {
                 webkit.messageHandlers.callIosNativeApp.postMessage(iosMsg);
             }
@@ -121,7 +117,7 @@
             console.log('!!!!!!!!!!!!!getCarImagePathByFolder!!!!!!appJsInterface!!!!!!!!!!');
             appJsInterface.getCarImagePathByFolder(cbJsonStr);
         } else {
-            // callIosNativeApp('changePage', );
+            callIosNativeApp('getCarImagePathByFolder', cbJsonStr);
         }
     };
 

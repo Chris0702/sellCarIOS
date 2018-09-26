@@ -37,14 +37,7 @@ class TestDriveController: Controller{
         //            insertLanguage();
         case Constants.CHANGE_PAGE_COMMAND:
             changePage(url:msg[Constants.URL] as!String)
-        case Constants.GET_LOCAL_STORAGE_MEM_ALL_COMMAND:
-            insertLocalStorageMemAll()
-        case Constants.GET_LOCAL_STORAGE_MEM_COMMAND:
-            insertLocalStorageMem(key:msg[Constants.KEY] as!String)
-        case Constants.SET_LOCAL_STORAGE_MEM_COMMAND:
-            setLocalStorageMem(key:msg[Constants.KEY] as!String,value:msg[Constants.VALUE] as!String)
-        case Constants.REMOVE_LOCAL_STORAGE_MEM_COMMAND:
-            removeLocalStorageMem(key: msg[Constants.KEY] as!String)
+    
         default:
             print("unknow command")
         }

@@ -50,7 +50,6 @@ class Controller {
             print(error.localizedDescription)
         }
     }
-    
     func changePage(url:String)
     {
         controlModel.changePage(webView: webView!, page: url)
