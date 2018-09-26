@@ -19,6 +19,23 @@ class StringProcess {
         return Constants.LINE_MESSAGE_NAME+"="+message
     }
     
+    static func getCarImagePathByFolderDic(imgArrStr:String)->[String: Any]
+    {
+        var imgArray:[String]? = nil
+        if let data = imgArrStr.data(using: String.Encoding.utf8) {
+            do {
+                let arrayOfString = try JSONSerialization.jsonObject(with: data, options: []) as? [String]
+                imgArray = arrayOfString!
+                }catch{
+            }
+        }
+        let result = [
+            Constants.IMAGE_ARRAY : imgArray,
+            Constants.SERVER_URL_STRING : Constants.SERVER_URL,
+            ] as [String : Any]
+        return result
+    }
+    
     static func convertToDictionary(text: String) -> [String: Any]? {
         if(text == ""){
             return [:]

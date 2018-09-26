@@ -36,6 +36,11 @@ class Constants {
     //javascript
     public static let IOS_PARAMETER_FOR_JAVASCRIPT: String = "callIosNativeApp";
     public static let JAVASCRIPT_PARAMETER_FOR_IOS: String = "jsAppInterface";
+    
+    public static let SET_IMAGE_ALL_JAVASCRIPT = "setImageAll";
+    public static let SET_CARS_INFO_JAVASCRIPT = "setCarsInfo";
+    
+    
     public static let INSERT_IP_HISTORY_LIST_JAVASCRIPT = "insertIpHistoryList";
     public static let INSERT_ACCOUNT_HISTORY_LIST_JAVASCRIPT = "insertAccountHistoryList";
     public static let INSERT_PROJECT_LIST_JAVASCRIPT = "insertProjectList";
@@ -119,6 +124,8 @@ class Constants {
     public static let COMPANY_TYPE: String  = "companyType";
     public static let FOLDER_NAME: String  = "folderName";
     public static let POSTER: String  = "poster";
+    public static let IMAGE_ARRAY: String  = "imgArr";
+    public static let  SERVER_URL_STRING="serverUrl";
     
     public static let HTML: String  = "html";
     public static let FUNCNAME: String = "funcName";

@@ -29,9 +29,6 @@
 
     jsAppInterface.setImageAll = function(result){
         if(typeof responseFunc == 'function'){
-            //result = decodeURIComponent(window.atob(result));
-            //var cbObj = {};
-            //cbObj.lang = lang;
             try{
                 var resultObj = JSON.parse(result);
                 responseFunc('setImageAll',resultObj);    

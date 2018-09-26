@@ -50,6 +50,17 @@ class Controller {
             print(error.localizedDescription)
         }
     }
+    
+    func evaluateScript(funcName: String, resStr: String, completionHandler: ((Any?, Error?) -> Void)? = nil) {
+        do {
+            DispatchQueue.main.async {
+                self.webView!.evaluateJavaScript(StringProcess.getEvaluateJavaScriptString(funcName:funcName, jsonString:resStr), completionHandler: completionHandler)
+            }
+        }catch{
+            print(error.localizedDescription)
+        }
+    }
+    
     func changePage(url:String)
     {
         controlModel.changePage(webView: webView!, page: url)
