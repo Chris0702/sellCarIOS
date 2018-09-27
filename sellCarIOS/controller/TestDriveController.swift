@@ -31,12 +31,38 @@ class TestDriveController: Controller{
             changePage(url:msg[Constants.URL] as!String)
         case Constants.GET_CARS_INFO_BY_ID_COMMAND:
             getCarsInfoById()
+        case Constants.ORDER_TEST_DRIVE_COMMAND:
+            orderTestDrive(name:msg[Constants.NAME] as!String,company:msg[Constants.COMPANY] as!String,phone:msg[Constants.PHONE] as!String,address:msg[Constants.ADDRESS] as!String,paymentType:msg[Constants.PAYMENT_TYPE] as!String,carName:msg[Constants.CAR_NAME] as!String,carCompany:msg[Constants.CAR_COMPANY] as!String,carVersion:msg[Constants.CAR_VERSION] as!String,carColor:msg[Constants.CAR_COLOR] as!String,hopeTime:msg[Constants.HOPE_TIME] as!String)
         case Constants.TOAST_COMMAND:
             toast(msg: msg[Constants.MSG] as!String)
         default:
             print("unknow command")
         }
     }
+    
+    func orderTestDrive(name:String,company:String,phone:String,address:String,paymentType:String,carName:String,carCompany:String,carVersion:String,carColor:String,hopeTime:String){
+        HttpClient.post(url: Constants.ORDER_TEST_DRIVE_API,
+                        postData:StringProcess.getOrderTestDrivePostData(name:name,company:company,phone:phone,address:address,paymentType:paymentType,carName:carName,carCompany:carCompany, carVersion:carVersion, carColor:carColor, hopeTime:hopeTime),
+                       successFunc: orderTestDriveSuccess,
+                       errorFunc: orderTestDriveError)
+    }
+    
+    func orderTestDriveSuccess(html: String)
+    {
+        var result = StringProcess.convertToDictionary(text: html)
+        if(result != nil && result?[Constants.RESULT_REST_API] != nil && result?[Constants.RESULT_REST_API] as! Int == 0){
+          toast(msg: Constants.ORDER_TEST_DRIVE_SUCCESS)
+            changePage(url: Constants.PRICE_PAGE_NAME)
+        }else{
+            orderTestDriveError()
+        }
+    }
+    
+    func orderTestDriveError()
+    {
+        toast(msg: Constants.ORDER_TEST_DRIVE_FAIL)
+    }
+    
     
     func getCarsInfoById(){
         HttpClient.get(url: StringProcess.getCarsInfoByIdUrl(id:controlModel.getFavoriteCar()),

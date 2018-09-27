@@ -19,6 +19,26 @@ class StringProcess {
         return Constants.LINE_MESSAGE_NAME+"="+message
     }
     
+    static func getOrderTestDrivePostData(name:String,company:String,phone:String,address:String,paymentType:String,carName:String,carCompany:String, carVersion:String, carColor:String, hopeTime:String)->String
+    {
+        let dic = [
+            "name" : name,
+            "company" : company,
+            "phone" : phone,
+            "address" : address,
+            "payment_type" : paymentType,
+            "car_name" : carName,
+            "car_company" : carCompany,
+            "car_version" : carVersion,
+            "car_color" : carColor,
+            "hopeTime" : hopeTime,
+            ]
+        
+        let dataStrJson = try? JSONSerialization.data(withJSONObject: dic, options: [])
+        let dataStr = String(data: dataStrJson!, encoding: .utf8)
+        return dataStr!
+    }
+    
     static func getCarsInfoByIdUrl(id:String)->String
     {
         return Constants.GET_CARS_INFO_BY_ID_API + "?id="+id;

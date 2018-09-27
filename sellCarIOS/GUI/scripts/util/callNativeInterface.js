@@ -80,7 +80,7 @@
             console.log('!!!!!!!!!!!!!orderTestDrive!!!!!!appJsInterface!!!!!!!!!!');
             appJsInterface.orderTestDrive(cbJsonStr);
         } else {
-            callIosNativeApp('changePage', cbJsonStr);
+            callIosNativeApp('orderTestDrive', cbJsonStr);
         }
     };
 

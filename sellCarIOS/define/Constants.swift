@@ -40,38 +40,6 @@ class Constants {
     public static let SET_IMAGE_ALL_JAVASCRIPT = "setImageAll";
     public static let SET_CARS_INFO_JAVASCRIPT = "setCarsInfo";
     
-    
-    public static let INSERT_IP_HISTORY_LIST_JAVASCRIPT = "insertIpHistoryList";
-    public static let INSERT_ACCOUNT_HISTORY_LIST_JAVASCRIPT = "insertAccountHistoryList";
-    public static let INSERT_PROJECT_LIST_JAVASCRIPT = "insertProjectList";
-    public static let INSERT_FUNCTION_LIST_JAVASCRIPT = "insertFunctionList";
-    public static let INSERT_ALARM_SUMMARY_JAVASCRIPT = "insertAlarmSummary";
-    public static let CB_ACCOUNT_LOGIN_JAVASCRIPT = "cbAccountLogin";
-    public static let INSERT_NODE_LIST_JAVASCRIPT = "insertNodeList";
-    public static let INSERT_NODE_STATUS_JAVASCRIPT = "insertNodeStatus";
-    public static let INSERT_ALARM_LOG_JAVASCRIPT = "insertAlarmLog";
-    public static let INSERT_ACTION_LOG_JAVASCRIPT = "insertActionLog";
-    public static let ALARM_ACK_ALL_STATUS_JAVASCRIPT = "alarmAckAllStatus";
-    public static let INSERT_TAGS_LIST_JAVASCRIPT = "insertTagsList";
-    public static let INSERT_TAG_VALUE_JAVASCRIPT = "insertTagValue";
-    public static let INSERT_LANGUAGE_JAVASCRIPT = "insertLanguage";
-    public static let INSERT_VERSION_JAVASCRIPT = "insertVersion";
-    public static let INSERT_LOCAL_STORAGE_MEM_ALL_JAVASCRIPT = "insertLocalStorageMemAll";
-    public static let INSERT_LOCAL_STORAGE_MEM_JAVASCRIPT = "insertLocalStorageMem";
-    public static let INSERT_R_TREND_ID_JAVASCRIPT = "insertRTrendId";
-    public static let INSERT_R_TREND_CONFIG_JAVASCRIPT = "insertRTrendConfig";
-    public static let INSERT_REAL_TIME_TAG_VALUES_JAVASCRIPT = "insertRealTimeTagValues";
-    public static let INSERT_TAGS_DATA_JAVASCRIPT = "insertTagsData";
-    // 2018.05.24 Elvis for gmap and bmap
-    public static let INSERT_SELECTED_NODE_JAVASCRIPT = "insertSelectedNode"
-    public static let INSERT_MAP_LIST_BY_NODE_JAVASCRIPT = "insertMapListByNode"
-    public static let INSERT_MAP_CONFIG_JAVASCRIPT = "insertMapConfig"
-    // 2018.06.13 Elvis for data log list
-    public static let INSERT_DATA_LOG_LIST_BY_NODE_JAVASCRIPT = "insertHisTrendGroupId"
-    // 2018.06.15 Elvis for data log
-    public static let INSERT_DATA_LOG_JAVASCRIPT = "insertDataLog"
-    
-
     //page
     public static let CONTROL_PAGE_NAME: String = "controller";
     public static let HOME_PAGE_NAME: String = "homePage";
@@ -98,7 +66,6 @@ class Constants {
     public static let WEB_LOCAL_DIRECTORY: String = "GUI/views";
     
     //controller command
-    
     public static let  GET_CAR_IMAGE_PATH_BY_FOLDER_COMMAND: String = "getCarImagePathByFolder";
     public static let  ORDER_TEST_DRIVE_COMMAND: String = "orderTestDrive";
     public static let  GET_CARS_INFO_BY_COMPANY_COMMAND: String = "getCarsInfoByCompany";
@@ -129,6 +96,19 @@ class Constants {
     public static let CARS_INFO: String  = "carsInfo";
     public static let FAVORITE_CAR="favoriteCar";
     
+
+    public static let COMPANY="company";
+    public static let PHONE="phone";
+    public static let ADDRESS="address";
+    public static let PAYMENT_TYPE="payment_type";
+    public static let CAR_NAME="car_name";
+    public static let CAR_COMPANY="car_company";
+    public static let CAR_VERSION="car_version";
+    public static let CAR_COLOR="car_color";
+    public static let HOPE_TIME="hopeTime";
+    
+    public static let ORDER_TEST_DRIVE_SUCCESS="預約試乘成功，稍後有專人聯繫您。";
+    public static let ORDER_TEST_DRIVE_FAIL="預約試乘失敗，請再試一次。";
     
     public static let HTML: String  = "html";
     public static let FUNCNAME: String = "funcName";
