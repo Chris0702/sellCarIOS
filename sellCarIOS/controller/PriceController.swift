@@ -21,23 +21,26 @@ class PriceController: Controller{
         print(urlRequest)
         print("---------------------")
         webView.load(urlRequest)
-        Constants.GO_HOME_PAGE = false;
     }
     
     
     override func scriptCallbackHandler(funcMsgDic:Dictionary<String, Any>, msg:Dictionary<String, Any>){
-        
         print("------child controller: price------")
-        
         let command = funcMsgDic[Constants.FUNCNAME] as! String
         switch command {
         case Constants.CHANGE_PAGE_COMMAND:
             changePage(url:msg[Constants.URL] as!String)
         case Constants.GET_CARS_INFO_BY_COMPANY_COMMAND:
             getCarsInfoByCompany()
+        case Constants.SET_FAVORITE_CAR_COMMAND:
+            setFavoriteCar(car: msg[Constants.FAVORITE_CAR] as!String)
         default:
             print("unknow command")
         }
+    }
+    
+    func setFavoriteCar(car:String){
+        controlModel.setFavoriteCar(car: car)
     }
     
     func getCarsInfoByCompany(){

@@ -14,13 +14,6 @@
 
     jsAppInterface.setCarsInfo = function(result){
         if(typeof responseFunc == 'function'){
-            //result = decodeURIComponent(window.atob(result));
-            //var cbObj = {};
-            //cbObj.lang = lang;
-
-            console.log('=======setCarsInfo=========result=====111=====')
-            console.log(result)
-            console.log('=======setCarsInfo=========result=====222=====')
             try{
                 var resultObj = JSON.parse(result);
                 responseFunc('setCarsInfo',resultObj);    

@@ -58,13 +58,6 @@ function responseFunc(functionType, result){
 
 	price.setCarsInfo = function(resultObj){
 		$('#content').children().remove();
-		console.log("======setCarsInfo======resultObj.carsInfo===========")
-        console.log(resultObj.carsInfo)
-        console.log("======setCarsInfo======resultObj.serverUrl===========")
-        console.log(resultObj.serverUrl)
-		console.log("======setCarsInfo=======================")
-
-
         for(var i =0;i<resultObj.carsInfo.length;i++){
         	var imgPath = resultObj.serverUrl + '/' + resultObj.carsInfo[i].imgPath;
         	createCarItem(resultObj.carsInfo[i]._id,resultObj.carsInfo[i].name,resultObj.carsInfo[i].special_price,resultObj.carsInfo[i].price,resultObj.carsInfo[i].description,imgPath);
@@ -77,18 +70,6 @@ function responseFunc(functionType, result){
 	};
 
 	function createCarItem(id,name,special_price,price,description,imgPath){
-		console.log("======createCarItem======id=================")
-		console.log(id)
-		console.log("======createCarItem======name=================")
-		console.log(name)
-		console.log("======createCarItem======special_price=================")
-		console.log(special_price)
-		console.log("======createCarItem======price=================")
-		console.log(price)
-		console.log("======createCarItem======description=================")
-		console.log(description)
-		console.log("======createCarItem======imgPath=================")
-		console.log(imgPath)
 		// $('<br/>', {}).appendTo($('#content'));
 
 		var titleName =$('<div/>', {

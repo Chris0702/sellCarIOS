@@ -103,7 +103,8 @@ class Constants {
     public static let  ORDER_TEST_DRIVE_COMMAND: String = "orderTestDrive";
     public static let  GET_CARS_INFO_BY_COMPANY_COMMAND: String = "getCarsInfoByCompany";
     public static let  GET_CARS_INFO_BY_ID_COMMAND: String = "getCarsInfoById";
-    public static let CHANGE_PAGE_COMMAND: String = "changePage";
+    public static let  CHANGE_PAGE_COMMAND: String = "changePage";
+    public static let  SET_FAVORITE_CAR_COMMAND: String = "setFavoriteCar";
     
    
     
@@ -127,6 +128,8 @@ class Constants {
     public static let IMAGE_ARRAY: String  = "imgArr";
     public static let SERVER_URL_STRING = "serverUrl";
     public static let CARS_INFO: String  = "carsInfo";
+    public static let FAVORITE_CAR="favoriteCar";
+    
     
     public static let HTML: String  = "html";
     public static let FUNCNAME: String = "funcName";

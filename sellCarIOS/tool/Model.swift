@@ -19,6 +19,8 @@ class Model: NSObject {
     var alertLoadingViewController: UIAlertController? = nil
     var viewController :UIViewController? = nil
     var compantType :String? = ""
+    var favoriteCar :String? = ""
+    
     override init(){
     }
     
@@ -27,9 +29,21 @@ class Model: NSObject {
         viewController = ViewController;
     }
     
+    func setFavoriteCar(car:String)
+    {
+        if (car != "")
+        {
+            favoriteCar = car;
+        }
+    }
+    
+    func getFavoriteCar() -> String
+    {
+        return favoriteCar!
+    }
+    
     func setCompantType(type:String)
     {
-        //type=Constants.EMPTY_STRING &&
         if (type != "")
         {
             compantType = type;
@@ -134,8 +148,11 @@ class Model: NSObject {
             releaseController();
             controller = PriceController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.PRICE_WEB_URL))
         case Constants.TEST_DRIVE_PAGE_NAME:
+             print("--------------111-------")
             releaseController();
+               print("--------------222-------")
             controller = TestDriveController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.TEST_DRIVE_WEB_URL))
+              print("--------------333-------")
         case Constants.REFERENCE_PAGE_NAME:
             releaseController();
             controller = ReferenceController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.REFERENCE_WEB_URL))

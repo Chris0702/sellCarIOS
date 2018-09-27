@@ -38,7 +38,7 @@
             console.log('!!!!!!!!!!!!!setFavoriteCar!!!!!!appJsInterface!!!!!!!!!!');
             appJsInterface.setFavoriteCar(cbJsonStr);
         } else {
-            callIosNativeApp('changePage', cbJsonStr);
+            callIosNativeApp('setFavoriteCar', cbJsonStr);
         }
     };
 
