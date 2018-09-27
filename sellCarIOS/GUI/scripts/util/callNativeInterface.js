@@ -4,9 +4,6 @@
     }
 
     function callIosNativeApp(funcName, msg) {
-
-        console.log('The ios ======111===33==');
-
         var iosMsg = JSON.stringify({ "funcName": funcName, "msg": msg });
         try {
             if (webkit && webkit.messageHandlers && webkit.messageHandlers.callIosNativeApp) {
@@ -22,10 +19,13 @@
     var callNativeInterface = new Object();
 
     callNativeInterface.toast = function(toastString) {
+        var cbObj = {};
+        cbObj.msg = toastString;
+        var cbJsonStr = JSON.stringify(cbObj);
         if (typeof(appJsInterface) != 'undefined') {
             appJsInterface.toast(toastString);
         } else {
-            callIosNativeApp('changePage', cbJsonStr);
+            callIosNativeApp('toast', cbJsonStr);
         }
     };
 
@@ -48,7 +48,7 @@
             console.log('!!!!!!!!!!!!!getCarsInfoById!!!!!!appJsInterface!!!!!!!!!!');
             appJsInterface.getCarsInfoById();
         } else {
-            callIosNativeApp('changePage', );
+            callIosNativeApp('getCarsInfoById', '');
         }
     };
 

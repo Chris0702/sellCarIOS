@@ -89,7 +89,7 @@ class Constants {
     
     //local web url
     public static let HOME_WEB_URL: String = "home";
-//    public static let HOME_WEB_URL: String = "test";
+    //    public static let HOME_WEB_URL: String = "test";
     public static let POSTER_WEB_URL: String = "poster";
     public static let PRICE_WEB_URL: String = "price";
     public static let TEST_DRIVE_WEB_URL: String = "testDrive";
@@ -105,8 +105,7 @@ class Constants {
     public static let  GET_CARS_INFO_BY_ID_COMMAND: String = "getCarsInfoById";
     public static let  CHANGE_PAGE_COMMAND: String = "changePage";
     public static let  SET_FAVORITE_CAR_COMMAND: String = "setFavoriteCar";
-    
-   
+    public static let  TOAST_COMMAND: String = "toast";
     
     //loadingView
     public static let IMAGE_PROGRESS_0_LOADING_VIEW: String = "progress_0.png";
@@ -205,8 +204,7 @@ class Constants {
     public static let URL: String  = "url";
     public static let KEY: String  = "key";
     public static let VALUE: String  = "value";
-    // 2018.06.13 Elvis for data log list
-    public static let DATA_LOG_LIST = "dataLogList"
+    public static let MSG: String  = "msg";
     
     
     //rest api type

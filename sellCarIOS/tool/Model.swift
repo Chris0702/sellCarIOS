@@ -148,11 +148,8 @@ class Model: NSObject {
             releaseController();
             controller = PriceController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.PRICE_WEB_URL))
         case Constants.TEST_DRIVE_PAGE_NAME:
-             print("--------------111-------")
             releaseController();
-               print("--------------222-------")
             controller = TestDriveController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.TEST_DRIVE_WEB_URL))
-              print("--------------333-------")
         case Constants.REFERENCE_PAGE_NAME:
             releaseController();
             controller = ReferenceController(webView: webView, model: self,urlRequest:self.getFileURLRequest(localWebURL: Constants.REFERENCE_WEB_URL))

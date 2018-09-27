@@ -19,6 +19,11 @@ class StringProcess {
         return Constants.LINE_MESSAGE_NAME+"="+message
     }
     
+    static func getCarsInfoByIdUrl(id:String)->String
+    {
+        return Constants.GET_CARS_INFO_BY_ID_API + "?id="+id;
+    }
+    
     static func getCarImagePathByFolderDic(imgArrStr:String)->[String: Any]
     {
         var imgArray:[String]? = nil
