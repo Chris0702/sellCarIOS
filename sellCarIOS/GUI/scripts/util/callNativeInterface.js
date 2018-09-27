@@ -58,7 +58,7 @@
             console.log('!!!!!!!!!!!!!getCarsInfoByCompany!!!!!!appJsInterface!!!!!!!!!!');
             appJsInterface.getCarsInfoByCompany();
         } else {
-            callIosNativeApp('changePage', cbJsonStr);
+            callIosNativeApp('getCarsInfoByCompany', '');
         }
     };
 

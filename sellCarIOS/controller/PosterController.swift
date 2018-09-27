@@ -44,7 +44,7 @@ class PosterController: Controller{
     }
     
     func getCarImagePathByFolder(folderName:String){
-        HttpClient.get(url: StringProcess.getCarImagePathByFolder(company:controlModel.getCompanyType(),type:Constants.POSTER),
+        HttpClient.get(url: StringProcess.getCarImagePathByFolderUrl(company:controlModel.getCompanyType(),type:Constants.POSTER),
                        successFunc: getCarImagePathByFolderSuccess,
                        errorFunc: getCarImagePathByFolderError)
     }
@@ -53,12 +53,7 @@ class PosterController: Controller{
     {
         print("----------------------getCarImagePathByFolder"+html)
         let result = StringProcess.getCarImagePathByFolderDic(imgArrStr: html)
-       print(result)
-//         print("---------------------2-getCarImagePathByFolder"+html)
-//        
         self.evaluateScript(funcName: Constants.SET_IMAGE_ALL_JAVASCRIPT, resDic: result, completionHandler: nil)
-//        self.evaluateScript(funcName: Constants.SET_IMAGE_ALL_JAVASCRIPT, resStr: html, completionHandler: nil)
-        print(html)
     }
     
     func getCarImagePathByFolderError()

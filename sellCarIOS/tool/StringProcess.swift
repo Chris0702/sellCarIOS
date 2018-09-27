@@ -36,6 +36,27 @@ class StringProcess {
         return result
     }
     
+    static func getCarsInfoByCompanyDic(carInfo:[Any])->[String: Any]
+    {
+//        var imgArray:[String]? = nil
+//        if let data = imgArrStr.data(using: String.Encoding.utf8) {
+//            do {
+//                let arrayOfString = try JSONSerialization.jsonObject(with: data, options: []) as? [String]
+//                imgArray = arrayOfString!
+//            }catch{
+//            }
+//        }
+        
+        print("################carInfo##############")
+        print(carInfo)
+        print("##############################")
+        let result = [
+            Constants.IMAGE_ARRAY : carInfo,
+            Constants.SERVER_URL_STRING : Constants.SERVER_URL,
+            ] as [String : Any]
+        return result
+    }
+    
     static func convertToDictionary(text: String) -> [String: Any]? {
         if(text == ""){
             return [:]
@@ -56,9 +77,13 @@ class StringProcess {
         return Constants.GET_LOCAL_PATH_ALL_API+"?foldername="+folderName
     }
     
-    static func getCarImagePathByFolder(company:String,type:String)->String{
+    static func getCarImagePathByFolderUrl(company:String,type:String)->String{
         let folder = "resource/company/"+company+"/image/"+type
         return getLocalPathAllUrl(folderName:folder)
+    }
+    
+    static func getCarsInfoByCompanyUrl(company:String)->String{
+       return Constants.GET_CARS_INFO_BY_COMPANY_API+"?company="+company
     }
     
     static func updateUrlPath()

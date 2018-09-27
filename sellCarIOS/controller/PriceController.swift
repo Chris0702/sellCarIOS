@@ -31,15 +31,36 @@ class PriceController: Controller{
         
         let command = funcMsgDic[Constants.FUNCNAME] as! String
         switch command {
-            //        case Constants.GET_FUNCTION_LIST_COMMAND:
-            //            getFunctionList()
-            //        case Constants.GET_LANGUAGE_COMMAND:
-        //            insertLanguage();
         case Constants.CHANGE_PAGE_COMMAND:
             changePage(url:msg[Constants.URL] as!String)
+        case Constants.GET_CARS_INFO_BY_COMPANY_COMMAND:
+            getCarsInfoByCompany()
         default:
             print("unknow command")
         }
+    }
+    
+    func getCarsInfoByCompany(){
+        HttpClient.get(url: StringProcess.getCarsInfoByCompanyUrl(company:controlModel.getCompanyType()),
+                       successFunc: getCarsInfoByCompanySuccess,
+                       errorFunc: getCarsInfoByCompanyError)
+    }
+    
+    func getCarsInfoByCompanySuccess(html: String)
+    {
+        var result = StringProcess.convertToDictionary(text: html)
+        if(result != nil && result?[Constants.RESULT_REST_API] != nil && result?[Constants.RESULT_REST_API] as! Int == 0){
+            let resDic = [
+                Constants.CARS_INFO : result![Constants.RES_STRING_REST_API],
+                Constants.SERVER_URL_STRING : Constants.SERVER_URL,
+                ] as [String : Any]
+            self.evaluateScript(funcName: Constants.SET_CARS_INFO_JAVASCRIPT, resDic: resDic, completionHandler: nil)
+        }
+    }
+    
+    func getCarsInfoByCompanyError()
+    {
+        print("getCarImagePathByFolder")
     }
     
     deinit {

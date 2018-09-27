@@ -125,7 +125,8 @@ class Constants {
     public static let FOLDER_NAME: String  = "folderName";
     public static let POSTER: String  = "poster";
     public static let IMAGE_ARRAY: String  = "imgArr";
-    public static let  SERVER_URL_STRING="serverUrl";
+    public static let SERVER_URL_STRING = "serverUrl";
+    public static let CARS_INFO: String  = "carsInfo";
     
     public static let HTML: String  = "html";
     public static let FUNCNAME: String = "funcName";
